@@ -8,4 +8,4 @@ layout: default
 
 # Specifications
 
-* *otp' Package URL type* (coming soon)
+* ['otp' Package URL type](specs/otp_purl_type) (draft)
