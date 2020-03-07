@@ -102,7 +102,7 @@ For [GenServer](https://hexdocs.pm/elixir/GenServer.html), [:gen_event](https://
 
 ## ETS tables
 
-ETS tables can be declared as ‘private’, preventing the table from being read by other processes and from being written to crash dump. Such tables are also not visible in ‘observer’.
+ETS tables can be declared as ‘private’, preventing the table from being read by other processes, such as remote shell sessions. Private tables are also not visible in ‘observer’.
 
 ## Processes
 
