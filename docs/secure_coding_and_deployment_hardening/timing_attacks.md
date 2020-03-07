@@ -27,7 +27,7 @@ end.
 
 ```elixir
 # Elixir
-case conn.assigns[:token] of
+case conn.assigns[:token] do
   ^token -> :ok
   _ -> :access_denied
 end
