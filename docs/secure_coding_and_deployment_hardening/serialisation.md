@@ -67,6 +67,6 @@ The attacker's anonymous function would be executed on the server, making this a
 
 The [Plug.Crypto.non_executable_binary_to_term/1,2](https://hexdocs.pm/plug_crypto/Plug.Crypto.html#non_executable_binary_to_term/2) function in the [plug_crypto](https://hex.pm/packages/plug_crypto) package implements a variant of the `:erlang.binary_to_term/1,2` function that raises an exception when it encounters an unsafe term. Remember to also pass `:safe` to prevent atom creation.
 
-Another data type that implements the Enumerable protocol is [Range](https://hexdocs.pm/elixir/Range.html): a malicious user of the above application could set the cookie to the serialised Range struct for a value such as `1..9999999999999999`, which would likely result in the server process using up large amaounts of CPU time and memory.
+Another data type that implements the Enumerable protocol is [Range](https://hexdocs.pm/elixir/Range.html): a malicious user of the above application could set the cookie to the serialised Range struct for a value such as `1..9999999999999999`, which would likely result in the server process using up large amounts of CPU time and memory.
 
 `Plug.Crypto.non_executable_binary_to_term/1,2` does not protect against this scenario: it requires further input validation of the deserialised value.
