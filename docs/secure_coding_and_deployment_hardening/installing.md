@@ -34,9 +34,9 @@ Many operating systems offer features such as Address Space Layout Randomization
 
 On Linux, use the ‘hardening-check’ tool, available as part of the ‘devscripts’ package on recent Debian/Ubuntu and Fedora/Red Hat distributions, to check the hardening status of the Erlang/OTP runtime system’s executables, including ‘beam.smp’, ‘erlexec’ and ‘epmd’.
 
-When building for Linux from source, manually or through tools that handle the build for you such as ‘kerl’ and ‘asdf’, it may be necessary to export the following environment variables prior to building:
+When building for Linux from source, manually or through tools that handle the build for you such as ‘kerl’ and ‘asdf’, it may be necessary to export the following environment variables prior to building (update with other flags, such as `-O`, as needed):
 
 ```bash
-CFLAGS="-O2 -g -fpie-O2 -g -fpie -fstack-protector-strong"
+CFLAGS="-fpie -fstack-protector-strong"
 LDFLAGS="-pie -z now" 
 ```
