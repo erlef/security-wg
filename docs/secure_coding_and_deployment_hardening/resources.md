@@ -22,7 +22,7 @@ Web development, e.g. with Cowboy, Plug and/or Phoenix:
   * [Secure Coding Practices](https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide)
   * [Cheat Sheet Series](https://cheatsheetseries.owasp.org)
   * And more...
-* Plug [HTTPS guide](https://hexdocs.pm/plug/https.html) and the ["Using SSL" section](https://hexdocs.pm/phoenix/endpoint.html#using-ssl) in Phoenix Endpoint Guide
+* Plug [HTTPS guide](https://hexdocs.pm/plug/https.html) and the ["Using SSL" section](https://hexdocs.pm/phoenix/using_ssl.html#content) in Phoenix Endpoint Guide
 
 Deployment:
 
