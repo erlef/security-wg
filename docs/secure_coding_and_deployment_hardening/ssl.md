@@ -17,7 +17,6 @@ next:
 ## TLS servers
 
 * Customize the enabled protocol versions and cipher suites, depending on the use-case
-* Set `honor_cipher_order` to true
 * Set `client_renegotiation` to false
 
 ## Server certificate verification
@@ -94,40 +93,95 @@ However, please note that the `ssl_crl_cache` module does not actually cache the
 
 ## Selecting protocol versions and ciphers
 
-In both clients and servers it is recommended to review the enabled TLS protocol versions and cipher suites, disabling weaker values that are not strictly required for interoperability. Additionally, in servers the cipher suites should be listed in order of preference (typically stronger ciphers should be listed first, and weaker ciphers included for compatibility reasons should be last), and the `honor_cipher_order` option should be set to true.
+Recent versions of Erlang/OTP disable most weak, legacy SSL/TLS protocol versions and cipher suites. For instance, Erlang/OTP 24 receives an 'A' score on the [Qualys SSL Labs 'SSL Server Test'](https://www.ssllabs.com/ssltest/), without any further tuning.
+
+Further hardening of the TLS parameters to comply with the Mozilla '[Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS)' "Intermediate compatibility" recommendations can be achieved as described below. These recommendations were written for servers, but the same settings may be used for client-side hardening, depending on the configuration of the TLS server(s) the client is expected to connect to.
 
 ```erlang
 %% Erlang
-Versions = ['tlsv1.2'],
 
-%% Start with TLS 1.2 defaults
-CipherSuites0 = ssl:cipher_suites(default, 'tlsv1.2'),
-CipherSuites = ssl:filter_cipher_suites(CipherSuites0, [
-    %% Only ECDHE key exchange, for forward secrecy
-    {key_exchange, fun
-        (ecdhe_ecdsa) -> true;
-        (ecdhe_rsa) -> true;
-        (_) -> false
-    end},
-    %% Exclude SHA1
-    {mac, fun
-        (sha) -> false;
-        (_) -> true
-    end}]).
+PreferredCiphers = [
+  %% Cipher suites (TLS 1.3): TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
+  #{cipher => aes_128_gcm, key_exchange => any, mac => aead, prf => sha256},
+  #{cipher => aes_256_gcm, key_exchange => any, mac => aead, prf => sha384},
+  #{cipher => chacha20_poly1305, key_exchange => any, mac => aead, prf => sha256},
+  %% Cipher suites (TLS 1.2): ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:
+  %% ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:
+  %% ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
+  #{cipher => aes_128_gcm, key_exchange => ecdhe_ecdsa, mac => aead, prf => sha256},
+  #{cipher => aes_128_gcm, key_exchange => ecdhe_rsa, mac => aead, prf => sha256},
+  #{cipher => aes_256_gcm, key_exchange => ecdhe_ecdsa, mac => aead, prf => sha384},
+  #{cipher => aes_256_gcm, key_exchange => ecdhe_rsa, mac => aead, prf => sha384},
+  #{cipher => chacha20_poly1305, key_exchange => ecdhe_ecdsa, mac => aead,prf => sha256},
+  #{cipher => chacha20_poly1305, key_exchange => ecdhe_rsa, mac => aead, prf => sha256},
+  #{cipher => aes_128_gcm, key_exchange => dhe_rsa, mac => aead, prf => sha256},
+  #{cipher => aes_256_gcm, key_exchange => dhe_rsa, mac => aead, prf => sha384}
+],
+Ciphers = ssl:filter_cipher_suites(PreferredCiphers, []),
+
+%% Protocols: TLS 1.2, TLS 1.3
+Versions = ['tlsv1.2', 'tlsv1.3'],
+
+%% TLS curves: X25519, prime256v1, secp384r1
+PreferredEccs = [secp256r1, secp384r1],
+Eccs = ssl:eccs() -- (ssl:eccs() -- PreferredEccs),
+
+SslOpts = [
+  {ciphers, Ciphers},
+  {versions, Versions},
+  {eccs, Eccs}
+].
 ```
 
 ```elixir
 # Elixir
-versions = [:"tlsv1.2"]
 
-ciphers_suites =
-  # Start with TLS 1.2 defaults
-  :ssl.cipher_suites(:default, :"tlsv1.2")
-  # Only ECDHE key exchange, for forward secrecy
-  |> Enum.filter(&match?(%{key_exchange: kx} when kx in [:ecdhe_ecdsa, :ecdhe_rsa], &1))
-  # Exclude SHA1
-  |> Enum.reject(&match?(%{mac: :sha}, &1))
+preferred_ciphers = [
+  # Cipher suites (TLS 1.3): TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
+  %{cipher: :aes_128_gcm, key_exchange: :any, mac: :aead, prf: :sha256},
+  %{cipher: :aes_256_gcm, key_exchange: :any, mac: :aead, prf: :sha384},
+  %{cipher: :chacha20_poly1305, key_exchange: :any, mac: :aead, prf: :sha256},
+  # Cipher suites (TLS 1.2): ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:
+  # ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:
+  # ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
+  %{cipher: :aes_128_gcm, key_exchange: :ecdhe_ecdsa, mac: :aead, prf: :sha256},
+  %{cipher: :aes_128_gcm, key_exchange: :ecdhe_rsa, mac: :aead, prf: :sha256},
+  %{cipher: :aes_256_gcm, key_exchange: :ecdh_ecdsa, mac: :aead, prf: :sha384},
+  %{cipher: :aes_256_gcm, key_exchange: :ecdh_rsa, mac: :aead, prf: :sha384},
+  %{cipher: :chacha20_poly1305, key_exchange: :ecdhe_ecdsa, mac: :aead, prf: :sha256},
+  %{cipher: :chacha20_poly1305, key_exchange: :ecdhe_rsa, mac: :aead, prf: :sha256},
+  %{cipher: :aes_128_gcm, key_exchange: :dhe_rsa, mac: :aead, prf: :sha256},
+  %{cipher: :aes_256_gcm, key_exchange: :dhe_rsa, mac: :aead, prf: :sha384}
+]
+ciphers = :ssl.filter_cipher_suites(preferred_ciphers, [])
+
+# Protocols: TLS 1.2, TLS 1.3
+versions = [:"tlsv1.2", :"tlsv1.3"]
+
+# TLS curves: X25519, prime256v1, secp384r1
+preferred_eccs = [:secp256r1, :secp384r1]
+eccs = :ssl.eccs() -- (:ssl.eccs() -- preferred_eccs)
+
+ssl_opts = [
+  {:ciphers, ciphers},
+  {:versions, versions},
+  {:eccs, eccs}
+]
 ```
+
+Notes:
+
+  * The preferred cipher suites from Mozilla's recommendation are filtered
+    through `ssl:filter_cipher_suites/2` with an empty filter, to remove any
+    values not supported by the `crypto` and its underlying OpenSSL version
+  * The X25519 curve is not included in the preferred curve names, as `ssl`
+    enables it implicitly
+  * The list of supported ECC curves is fetched using `ssl:eccs/0` and used to
+    remove any unsupported values from the list of preferred curves
+  * The `ssl` application default of `{honor_cipher_order, false}` is retained,
+    in accordance with Mozilla's recommendation; some test tools rate a
+    server's configuration higher when this option is set to `true`, to let
+    the server override the client's cipher preferences
 
 Consider making the protocol version and cipher suite configuration part of the application’s runtime configuration, instead of hardcoding the values: it should be possible to remove or add a protocol version or cipher suite without rebuilding the application.
 
