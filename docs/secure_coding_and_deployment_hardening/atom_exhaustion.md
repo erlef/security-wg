@@ -21,8 +21,8 @@ next:
 * Use [List.to_existing_atom/1](https://hexdocs.pm/elixir/List.html#to_existing_atom/1) instead of [List.to_atom/1](https://hexdocs.pm/elixir/List.html#to_atom/1)
 * Use [Module.safe_concat/1,2](https://hexdocs.pm/elixir/Module.html#safe_concat/2) instead of [Module.concat/1,2](https://hexdocs.pm/elixir/Module.html#concat/2)
 * Do not use interpolation to create atoms:
-    * `:”new_atom_#{index}”`
-    * `:’new_atom_#{index}’`
+    * `:"new_atom_#{index}"`
+    * `:'new_atom_#{index}'`
     * `~w[row_#{index} column_#{index}]a`
 * Use the `:safe` option when calling [:erlang.binary_to_term/2](https://erlang.org/doc/man/erlang.html#binary_to_term-2) on untrusted input (see also [Serialisation and deserialisation](serialisation))
 

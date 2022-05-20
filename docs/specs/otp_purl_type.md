@@ -50,7 +50,7 @@ pkg:hex/plug@1.8.3
 pkg:hex/phoenix@1.4.12
 ```
 
-However, we loose the ability to specify which parts of Erlang or Elixir we are actually using, or to selectively patch or upgrade the individual applications. It may also be difficult for SBOM tools to determine exectly which source repository was used.
+However, we loose the ability to specify which parts of Erlang or Elixir we are actually using, or to selectively patch or upgrade the individual applications. It may also be difficult for SBOM tools to determine exactly which source repository was used.
 
 ## Proposal
 
