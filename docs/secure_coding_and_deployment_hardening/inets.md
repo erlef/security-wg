@@ -13,14 +13,14 @@ next:
 
 ## Background
 
-The ‘httpc` HTTP client in ‘inets’ inherits the TLS protocol defaults from the ‘ssl’ applications, enabling man-in-the-middle (MitM) attacks. Please refer to [Erlang standard library: ssl](ssl) for details.
+The `httpc` HTTP client in ‘inets’ inherits the TLS protocol defaults from the ‘ssl’ applications, enabling man-in-the-middle (MitM) attacks. Please refer to [Erlang standard library: ssl](ssl) for details, including examples of options that work with OTP versions prior to 25.
 
 ```erlang
 %% Erlang
 httpc:request(get, {"https://www.example.net/", []}, [
     {ssl, [
         {verify, verify_peer},
-        {cacertfile, "/etc/ssl/cert.pem"},
+        {cacerts, public_key:cacerts_get()},
         {depth, 2},
         {customize_hostname_check, [
             {match_fun, public_key:pkix_verify_hostname_match_fun(https)}
@@ -34,7 +34,7 @@ httpc:request(get, {"https://www.example.net/", []}, [
 :httpc.request(:get, {'https://www.example.net/', []}, [
   ssl: [
     verify: :verify_peer,
-    cacertfile: '/etc/ssl/cert.pem',
+    cacerts: :public_key.cacerts_get(),
     depth: 2,
     customize_hostname_check: [
       match_fun: :public_key.pkix_verify_hostname_match_fun(:https)
