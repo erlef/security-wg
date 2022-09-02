@@ -25,14 +25,24 @@ The default value for the `verify` [option](https://erlang.org/doc/man/ssl.html#
 
 In order for client connections to succeed in `verify_peer` mode, a few more ssl options must be set:
 
-* A set of trusted root CA certificates must be selected, using the `cacertfile` or `cacerts` options; consider using the CA trust store available in the target operating system (e.g. /etc/ssl/certs/ca-certificates.crt), or add a Hex package such as [certifi](https://hex.pm/packages/certifi) or [castore](https://hex.pm/packages/castore) as a dependency; either way, ensure the CA trust store is regularly updated
+* A set of trusted root CA certificates must be selected, using the `cacertfile` or `cacerts` options; consider using the CA trust store available in the target operating system (on OTP 25 or later, use `public_key:cacerts_get/0`), or add a Hex package such as [certifi](https://hex.pm/packages/certifi) or [castore](https://hex.pm/packages/castore) as a dependency; either way, ensure the CA trust store is regularly updated
 
 * It may be necessary to increase the value of the `depth` option from its default of 1; a value of 2 or 3 should be sufficient for most servers on the public Internet
 
 * It may also be necessary to pass the `customize_hostname_check` option, to enable support for common wildcard certificates; the examples given below work on OTP 21 or later; for compatibility with older releases consider using the [ssl_verify_fun](https://hex.pm/packages/ssl_verify_fun) Hex package instead
 
 ```erlang
-%% Erlang
+%% Erlang (OTP 25 or later)
+ssl:connect("example.net", 443, [
+    {verify, verify_peer},
+    {cacerts, public_key:cacerts_get()},
+    {depth, 3},
+    {customize_hostname_check, [
+        {match_fun, public_key:pkix_verify_hostname_match_fun(https)}
+    ]}
+]).
+
+%% Erlang (earlier OTP versions, or custom CA trust store)
 ssl:connect("example.net", 443, [
     {verify, verify_peer},
     {cacertfile, "/etc/ssl/cert.pem"},
@@ -44,7 +54,17 @@ ssl:connect("example.net", 443, [
 ```
 
 ```elixir
-# Elixir
+# Elixir (OTP 25 or later)
+:ssl.connect('example.net', 443,
+  verify: :verify_peer,
+  cacerts: :public_key.cacerts_get(),
+  depth: 3,
+  customize_hostname_check: [
+    match_fun: :public_key.pkix_verify_hostname_match_fun(:https)
+  ]
+)
+
+# Elixir (earlier OTP versions, or custom CA trust store)
 :ssl.connect('example.net', 443,
   verify: :verify_peer,
   cacertfile: '/etc/ssl/cert.pem',
@@ -65,7 +85,7 @@ One scenario that’s not handled by the above examples is certificate revocatio
 %% Erlang
 ssl:connect("revoked.badssl.com", 443, [
     {verify, verify_peer},
-    {cacertfile, "/etc/ssl/cert.pem"},
+    {cacerts, public_key:cacerts_get()},
     {depth, 3},
     {customize_hostname_check, [
         {match_fun, public_key:pkix_verify_hostname_match_fun(https)}
@@ -79,7 +99,7 @@ ssl:connect("revoked.badssl.com", 443, [
 # Elixir
 :ssl.connect('revoked.badssl.com', 443,
   verify: :verify_peer,
-  cacertfile: '/etc/ssl/cert.pem',
+  cacerts: :public_key.cacerts_get(),
   depth: 3,
   customize_hostname_check: [
     match_fun: :public_key.pkix_verify_hostname_match_fun(:https)
