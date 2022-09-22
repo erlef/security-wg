@@ -8,7 +8,7 @@ next:
   title: "Erlang standard library: ssl"
 ---
 
-* Use `crypto:equal_const_time/2`, or similar specialized constant-time comparison functions, rather than pattern matching or built-in operators to compare secrets
+* Use `crypto:hash_equals/2`, or similar specialized constant-time comparison functions, rather than pattern matching or built-in operators to compare secrets
 
 
 ## Background
@@ -33,11 +33,11 @@ case conn.assigns[:token] do
 end
 ```
 
-The second implementation uses `crypto:equal_const_time/2`. The check avoids comparison shortcuts that would leave it vulnerable to timing attacks.
+The second implementation uses `crypto:hash_equals/2`. The check avoids comparison shortcuts that would leave it vulnerable to timing attacks. Note that it requires both arguments to be the same size, typically the output of a hash function.
 
 ```erlang
 %% Erlang
-case crypto:equal_const_time(Cookie, Session#session.cookie) of
+case crypto:hash_equals(Cookie, Session#session.cookie) of
     true -> ok;
     false -> access_denied
 end.
@@ -51,4 +51,4 @@ case Plug.Crypto.secure_compare(conn.assigns[:token], token) do
 end
 ```
 
-The `crypto:equal_const_time/2` function was introduced fairly recently. On older Erlang/OTP versions it may be necessary to use a 3rd party library instead. The [pbkdf2](https://hex.pm/packages/pbkdf2) Erlang package contains a `compare_secure/2` function, and the [plug_crypto](https://hex.pm/packages/plug_crypto) Elixir package (which is included in any Phoenix application by default) provides [secure_compare/2](https://hexdocs.pm/plug_crypto/Plug.Crypto.html#secure_compare/2).
+The `crypto:hash_equals/2` function was introduced in OTP 25. On older Erlang/OTP versions it may be necessary to use a 3rd party library instead. The [pbkdf2](https://hex.pm/packages/pbkdf2) Erlang package contains a `compare_secure/2` function, and the [plug_crypto](https://hex.pm/packages/plug_crypto) Elixir package (which is included in any Phoenix application by default) provides [secure_compare/2](https://hexdocs.pm/plug_crypto/Plug.Crypto.html#secure_compare/2).
