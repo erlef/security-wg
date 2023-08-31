@@ -19,16 +19,16 @@ session management, check out the
 
 ## No server-side session revocation
 
-The default session management for a new Plug/Phoenix application typically uses
+The default session management for a new Plug/Phoenix application uses
 the [cookie session store][hexdoc:plug.session_cookie]. With this session store
 the session state is maintained entirely in the client’s browser: there is no
-server-side session state, meaning the server cannot revokea session. Signing
+server-side session state, meaning the server cannot revoke a session. Signing
 out merely clears the session cookie in the client’s browser, but does not
 invalidate the session cookie value.
 
 In practice this means that a session cookie, once captured by an attacker, can
-be injected into HTTP requests to resume the session at any time, even if the
-user signed out afterwards. The only way to invalidate a session on the server
+be injected into HTTP requests to resume the session at any time, even after the
+user has signed out. The only way to invalidate a session on the server
 would be to rotate the signing key used to validate the session (the
 `secret_key_base` and/or the `signing_salt`), but this would invalidate all
 sessions of all clients.
@@ -56,7 +56,7 @@ cookie is not sufficient, as this only takes care of clearing the cookie in the
 browser: it does not invalidate the session in the server.
 
 This requires a server-side session store, as described above, with additional
-fields for tracking the session creation timestamp and optionally the timestamp
+fields for tracking the session creation timestamp and/or the timestamp
 the session was last used. Invalidation can then happen periodically through a
 background task, or as a filter on these fields in the query that looks up a
 session in the database.

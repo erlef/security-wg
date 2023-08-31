@@ -16,8 +16,8 @@ seo_keywords:
 Critical security fixes are often only made available in the latest and greatest
 version of 3rd party packages, When an application’s dependencies are falling
 behind the currently available releases, this may impact the ability to quickly
-apply those fixes that are released. When a dependency upgrade is non-trivial,
-it is probably best to upgrade when there is no pressure to get a security fix
+apply fixes as they are released. When a dependency upgrade is non-trivial,
+it is probably best to plan the upgrade while there is no pressure to get a security fix
 deployed.
 
 The Mix task `mix hex.outdated` displays a list of available package updates.

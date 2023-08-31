@@ -12,14 +12,14 @@ seo_keywords:
   - best practices
 ---
 
-This document describes best practices for secure development of Phoenix web
-applications in the Elixir programming language, written by the Erlang Ecosystem
+This document describes best practices for secure development of web
+applications using BEAM languages, written by the Erlang Ecosystem
 Foundation’s Security Working Group.
 
 The working group also publishes
 [Secure Coding and Deployment Hardening Guidelines](https://erlef.github.io/security-wg/secure_coding_and_deployment_hardening/),
-for Elixir and Erlang applications. This document focuses on Phoenix, while the
-previous document is on Elixir and Erlang security.
+for Elixir and Erlang applications. This document focuses on web applications, while the
+previous document covers the Elixir and Erlang language runtimes and standard library.
 
 To report mistakes or suggest additional content, please open an issue or create
 a pull request in the [GitHub repository]({{site.github.repository_url}}).
