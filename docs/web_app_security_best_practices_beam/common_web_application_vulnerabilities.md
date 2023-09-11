@@ -84,7 +84,7 @@ def view_photo(conn, %{"filename" => filename}) do
 end
 ```
 
-A malicious user could sent the content_type to `text/html`, and upload an HTML
+A malicious user could set the content_type to `text/html`, and upload an HTML
 document that executes JavaScript. When this file is viewed by a victim, the
 XSS payload executes in the victim web browser.
 
@@ -268,21 +268,8 @@ Preventing SQL Injection in Elixir/Phoenix/Ecto applications
 1.  Use Ecto to build queries. The library has very strong SQL injection
     prevention.
     1. SQL injection vulnerabilities are introduced through the “escape hatch”
-       provided by Ecto via `Ecto.Query.API.fragment/1` or the `Ecto.Adapters.SQL`
-       functions that allow raw SQL input.
-1.  Even if you use fragment and are interpolating user input, Ecto will throw an
-    error and warn you. For example:
-    ```elixir
-    query =
-      from f in Fruit,
-      where: fragment("f0.name = #{name} AND f0.secret = FALSE")
-    ```
-    ```console
-    ** (Ecto.Query.CompileError) to prevent SQL injection attacks, fragment(...) does not allow strings to be interpolated as the first argument via the `^` operator, got: `"f0.name = #{name} AND f0.secret = FALSE"`
-    ```
-1.  It is possible to bypass the above warning using macros. If the fragment is
-    constructed with user-supplied input, you will introduce a SQL injection
-    vulnerability.
+       provided by Ecto via the `Ecto.Adapters.SQL` function that allows raw SQL
+       input.
 1.  [Ecto vectors for SQL injection][github:sobelow#2]:
     - `Repo.query`
     - `Repo.query!`
