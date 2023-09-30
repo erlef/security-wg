@@ -10,7 +10,7 @@ next:
 
 ## Elixir
 
-When interfacing with Erlang code from Elixir:
+When calling Erlang code from Elixir:
 
 * Prefer [case](https://elixir-lang.org/getting-started/case-cond-and-if.html#case) over [if, unless](https://elixir-lang.org/getting-started/case-cond-and-if.html#if-and-unless) or [cond](https://elixir-lang.org/getting-started/case-cond-and-if.html#cond)
 * Prefer [and](https://hexdocs.pm/elixir/Kernel.html#and/2) over [&&](https://hexdocs.pm/elixir/Kernel.html#&&/2)
