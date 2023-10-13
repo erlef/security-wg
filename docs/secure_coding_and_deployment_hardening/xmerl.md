@@ -4,8 +4,8 @@ previous:
   url: public_key
   title: "Erlang standard library: public_key"
 next:
-  url: elixir_truthy
-  title: Boolean coercion in Elixir
+   url: deployment_hardening
+   title: Deployment Hardening
 ---
 
 * Do not use [xmerl_scan](https://erlang.org/doc/man/xmerl_scan.html) on untrusted input (see [Preventing atom exhaustion](atom_exhaustion))

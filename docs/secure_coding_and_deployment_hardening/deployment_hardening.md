@@ -2,8 +2,8 @@
 title: Deployment Hardening
 layout: page
 previous:
-  url: elixir_truthy
-  title: Boolean coercion in Elixir
+  url: xmerl
+  title: "Erlang standard library: xmerl"
 next:
   url: installing
   title: Installing/building the runtime system

@@ -25,7 +25,6 @@ To report mistakes or suggest additional content, please open an issue or create
   * [Erlang standard library: crypto](crypto)
   * [Erlang standard library: public_key](public_key)
   * [Erlang standard library: xmerl](xmerl)
-  * [Boolean coercion in Elixir](elixir_truthy)
 * [Deployment Hardening](deployment_hardening)
   * [Installing/building the runtime system](installing)
   * [Releases](releases)
