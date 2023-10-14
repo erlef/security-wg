@@ -23,4 +23,3 @@ Code examples are given in Erlang and Elixir, but most recommendations apply equ
 * [Erlang standard library: crypto](crypto)
 * [Erlang standard library: public_key](public_key)
 * [Erlang standard library: xmerl](xmerl)
-* [Boolean coercion in Elixir](elixir_truthy)
