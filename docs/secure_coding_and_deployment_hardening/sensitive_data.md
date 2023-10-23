@@ -81,7 +81,7 @@ prune_stacktrace(Stacktrace) ->
 ```elixir
 # Elixir
 def encrypt_with_secret(message, wrapped_secret) do
-  ComeCryptoLib.encrypt(message, wrapped_secret.())
+  SomeCryptoLib.encrypt(message, wrapped_secret.())
 rescue
   e -> reraise e, prune_stacktrace(System.stacktrace())
 end
