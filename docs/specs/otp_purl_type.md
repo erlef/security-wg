@@ -9,7 +9,7 @@ For background information on Package URLs, please refer to the [purl specificat
 
 ## Background
 
-Suppose we were to deploy a BEAM project on a Linux VM using Debian 10 (Buster), using the OS native package manager to install the 'erlang' package ([erlang_21.2.6+dfsg-1_all](https://debian.pkgs.org/10/debian-main-amd64/erlang_21.2.6+dfsg-1_all.deb.html)). The project itself depends on Cowboy (fetched from Hex, along with its dependencies) and is built on a dediced build server and packaged as a release. The release contains only the project files, not the Erlang runtime system.
+Suppose we were to deploy a BEAM project on a Linux VM using Debian 10 (Buster), using the OS native package manager to install the 'erlang' package ([erlang_21.2.6+dfsg-1_all](https://debian.pkgs.org/10/debian-main-amd64/erlang_21.2.6+dfsg-1_all.deb.html)). The project itself depends on Cowboy (fetched from Hex, along with its dependencies) and is built on a dedicated build server and packaged as a release. The release contains only the project files, not the Erlang runtime system.
 
 For such an installation, the software bill-of-materials (SBOM) might include the following purls:
 
