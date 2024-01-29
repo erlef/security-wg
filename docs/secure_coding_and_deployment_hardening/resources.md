@@ -18,9 +18,9 @@ Static analysis:
 
 ### Anti-patterns in Elixir
 
-The Elixir documentation includes a section on [https://hexdocs.pm/elixir/what-anti-patterns.html](anti-patterns): common mistakes or indicators of potential problems in code. The unintended behaviours caused by such mistakes or problems may lead to vulnerabilities. Getting familiar with these anti-patterns and learning to avoid them can help produce cleaner code, fewer bugs, fewer surpises and therefore fewer vulnerabilities.
+The Elixir documentation includes a section on [anti-patterns](https://hexdocs.pm/elixir/what-anti-patterns.html): common mistakes or indicators of potential problems in code. The unintended behaviours caused by such mistakes or problems may lead to vulnerabilities. Getting familiar with these anti-patterns and learning to avoid them can help produce cleaner code, fewer bugs, fewer surpises and therefore fewer vulnerabilities.
 
-For instance, the [https://hexdocs.pm/elixir/code-anti-patterns.html#non-assertive-truthiness](Non-assertive truthiness) anti-pattern can lead to logic errors in authentication or authorization checks.
+For instance, the [Non-assertive truthiness](https://hexdocs.pm/elixir/code-anti-patterns.html#non-assertive-truthiness) anti-pattern can lead to logic errors in authentication or authorization checks.
 
 ### Other documentation
 
