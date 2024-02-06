@@ -60,7 +60,7 @@ Make sure to test the selected options against test endpoints, such as those pro
 
 ## Revocation check
 
-One scenario that’s not handled by the above examples is certificate revocation: no revocation check is performed, and therefore a revoked but otherwise valid certificate would be accepted. It is possible to check certificates against the CA’s Certificate Revocation List (CRL) by setting the `crl_check` option to true. This also requires the `crl_cache` to be configured:
+One scenario that’s not handled by the above examples is certificate revocation: no revocation check is performed, and therefore a revoked but otherwise valid certificate would be accepted. It is possible to check certificates against the CA’s Certificate Revocation List (CRL) by setting the `crl_check` option to `best_effort`. This also requires the `crl_cache` to be configured:
 
 ```erlang
 %% Erlang
@@ -71,7 +71,7 @@ ssl:connect("revoked.badssl.com", 443, [
     {customize_hostname_check, [
         {match_fun, public_key:pkix_verify_hostname_match_fun(https)}
     ]},
-    {crl_check, true},
+    {crl_check, best_effort},
     {crl_cache, {ssl_crl_cache, {internal, [{http, 1000}]}}}
 ]).
 ```
@@ -85,10 +85,12 @@ ssl:connect("revoked.badssl.com", 443, [
   customize_hostname_check: [
     match_fun: :public_key.pkix_verify_hostname_match_fun(:https)
   ],
-  crl_check: true,
+  crl_check: :best_effort,
   crl_cache: {:ssl_crl_cache, {:internal, [http: 1000]}}
 )
 ```
+
+The stricter `true` can be used instead of `best_effort`: in this case validation will fail if CRL is missing, which can happen if the certificate has no CRL or exclusively uses OCSP.
 
 However, please note that the `ssl_crl_cache` module does not actually cache the CRL contents, so each handshake will trigger a new CRL lookup, which impacts the performance and reliability of TLS connections. In applications that require revocation checks as well as high throughput a custom CRL cache implementation will be needed.
 
