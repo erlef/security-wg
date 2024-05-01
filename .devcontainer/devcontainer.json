@@ -1,0 +1,13 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.2-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  },
+  "forwardPorts": [4000],
+  "postCreateCommand": "bundle install"
+}

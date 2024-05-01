@@ -9,10 +9,16 @@ Public documents and drafts are kept in [/docs](/docs) and made available throug
 # How to see documentation locally
 
 Requirerments:
- * ruby >= 2.0
+ * ruby >= 3.2
  * bundler
 
+**Or use VSCode Devcontainer**
+
 Instructions
-* `bundle install`
-* `bundle exec jekyll serve`
+
+```bash
+bundle install
+cd docs
+bundle exec jekyll serve
+```
 
