@@ -8,6 +8,10 @@ next:
   title: Serialisation and deserialisation
 ---
 
+## General
+
+* Use lookup tables to convert strings or binaries to atoms when the desired atoms are known beforehand.
+
 ## Erlang
 
 * Use [list_to_existing_atom/1](https://erlang.org/doc/man/erlang.html#list_to_existing_atom-1) instead of [list_to_atom/1](https://erlang.org/doc/man/erlang.html#list_to_atom-1)
@@ -32,7 +36,9 @@ Each unique atom value in use in the virtual machine takes up an entry in the gl
 
 Because of the above, care should be taken to not create an unbounded number of atoms. In particular, creating atoms from untrusted input can lead to denial-of-service (DoS) vulnerabilities.
 
-The best way to prevent atom exhaustion is by ensuring no new atom values are created at runtime: as long as any atom value required by the application is referenced in code, that value will be defined in the atom table when the code is loaded (e.g. at [release](releases) startup). The conversion of other types into atoms can then be constrained to only allow existing values using the `...to_existing_atom/1` function variants.
+The best way to prevent atom exhaustion is by ensuring no new atom values are created at runtime: as long as any atom value required by the application is referenced in code, that value will be defined in the atom table when the code is loaded (e.g. at [release](releases) startup). The conversion of other types into atoms can then be constrained to only allow existing values by using lookup tables, or when this is not practical, by using the `...to_existing_atom/1` function variants.
+
+A lookup table is to be preferred since the `...to_existing_atom/1` function variants can still accept arbitrary input and introduce unintended atoms. Using a lookup table prevents the risk of converting unexpected or harmful values, such as an existing module name, into atoms. This method not only safeguards against atom table exhaustion but also ensures strict control over which atoms are allowed in your application.
 
 Beware of functions in applications/libraries that create atoms from input values. For instance, the [xmerl_scan](https://erlang.org/doc/man/xmerl_scan.html) XML parser that comes with Erlang/OTP generates atoms from XML tag and attribute names (see [Erlang standard library: xmerl](xmlerl)), and the [http_uri:parse/1](https://erlang.org/doc/man/http_uri.html#parse-1) function in the 'inets' application converts the URI scheme to an atom (see [Erlang standard library: inets](inets)).
 
