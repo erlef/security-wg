@@ -8,7 +8,7 @@ layout: page
 The EEF Security Working Group and [OWASP][owasp_website] share a mission to
 encourage secure software development practices and to share practical,
 actionable knowledge with developers worldwide. While OWASP resources tend to
-be platform agnostic, the EEF Security WG focusses on the Erlang ecosystem,
+be platform agnostic, the EEF Security WG focuses on the Erlang ecosystem,
 making the provided resources very much complementary.
 
 Our [Secure Coding and Deployment Hardening Guidelines](/secure_coding_and_deployment_hardening)
