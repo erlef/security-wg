@@ -91,6 +91,8 @@ XSS payload executes in the victim web browser.
 **Further Reading:**
 
 - [Cross Site Scripting (XSS) Patterns in Phoenix][paraxial:xss_phoenix]
+- [OWASP Top Ten: Injection][owasp:top_10_injection]
+- [OWASP Cheat Sheet: Cross Site Scripting Prevention][owasp:cheat_sheet_xss]
 
 ### Content Security Policy
 
@@ -100,7 +102,7 @@ If someone is unfamiliar with web security and is using the Phoenix Elixir web f
 
 Using Content Security Policy in the Phoenix Elixir web framework is a crucial security feature that helps protect web applications from various types of attacks. By restricting the sources of content that the application can load or execute, developers can reduce the risk of security vulnerabilities and ensure the safety of their users.
 
-To learn more about Content Security Policy, see: [https://content-security-policy.com/](https://content-security-policy.com/)
+To learn more about Content Security Policy, see: [https://content-security-policy.com/](https://content-security-policy.com/) and the [OWASP Cheat Sheet: Content Security Policy][owasp:cheat_sheet_csp]
 
 To help create policies, see: [https://report-uri.com/home/generate](https://report-uri.com/home/generate)
 
@@ -222,6 +224,7 @@ In this instance, it may be possible to trigger the POST functionality with a
 
 - [Elixir/Phoenix Security: What is CSRF via Action Reuse?][paraxial:action_reuse_csrf]
 - [Elixir/Phoenix Security: Introduction to Cross Site Request Forgery (CSRF)][paraxial:csrf_intro]
+- [OWASP Cheat Sheet: Server-Side Request Forgery Prevention][owasp:cheat_sheet_xsrf]
 
 ## Cross-Site WebSocket Hijacking (CSWSH)
 
@@ -297,6 +300,7 @@ Preventing SQL Injection in Elixir/Phoenix/Ecto applications
 **Further Reading:**
 
 - [Detecting SQL Injection in Phoenix with Sobelow][paraxial:sql_injection]
+- [OWASP Cheat Sheet: SQL Injection Prevention][owasp:cheat_sheet_sqli]
 
 ## Denial of Service (DoS)
 
@@ -410,6 +414,11 @@ def handle_event("delete", %{"id" => id}, socket) do
 end
 ```
 
+**Further Reading:**
+
+- [OWASP Top Ten: Broken Access Control][owasp:top_10_access_control]
+
+
 [csp_nonces]: https://content-security-policy.com/nonce/
 [elixirforum:ecto_sql_injection]: https://elixirforum.com/t/ecto-adapters-sql-query-for-sql-query-leads-to-sql-injection-attack/34678/2
 [gh:sobelow]: https://github.com/nccgroup/sobelow
@@ -434,3 +443,9 @@ end
 [paraxial:sql_injection]: https://paraxial.io/blog/sql-injection
 [paraxial:xss_phoenix]: https://paraxial.io/blog/xss-phoenix
 [sobelow_conf]: https://www.youtube.com/watch?v=w3lKmFsmlvQ
+[owasp:top_10_injection]: https://owasp.org/Top10/A03_2021-Injection/
+[owasp:cheat_sheet_xss]: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
+[owasp:cheat_sheet_csp]: https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+[owasp:cheat_sheet_xsrf]: https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
+[owasp:cheat_sheet_sqli]: https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+[owasp:top_10_access_control]: https://owasp.org/Top10/A01_2021-Broken_Access_Control/

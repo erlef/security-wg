@@ -107,7 +107,7 @@ SBoMs in these formats for many languages, including [Elixir][hex:sbom] and
 [Erlang][hex:rebar3_sbom].
 
 Once produced, the SBoM can be ingested into a variety of tools, such as
-[OWASP Dependency-Track][owasp_dependency_track]. Ideally, SBoM generation and
+[Dependency-Track][dependency_track]. Ideally, SBoM generation and
 ingestion happens automatically as part of the project’s CI/CD pipeline.
 
 [github:mix_audit]: https://github.com/mirego/mix_audit
@@ -119,4 +119,4 @@ ingestion happens automatically as part of the project’s CI/CD pipeline.
 [mend_renovate]: https://www.mend.io/free-developer-tools/renovate/
 [hex:sbom]: https://hex.pm/packages/sbom
 [hex:rebar3_sbom]: https://hex.pm/packages/rebar3_sbom
-[owasp_dependency_track]: https://dependencytrack.org
+[dependency_track]: https://dependencytrack.org
