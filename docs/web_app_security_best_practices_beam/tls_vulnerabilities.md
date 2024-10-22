@@ -103,6 +103,10 @@ HTTPS, blocking downgrade attacks with a plain HTTP URL. `Plug.SSL` and the
 Phoenix `force_ssl` Endpoint configuration take an hsts option that defaults to
 `true`.
 
+**Further Reading:**
+
+- [OWASP Cheat Sheet: Transport Layer Security][owasp:cheat_sheet_tls]
+
 [hexdoc:plug.ssl_configure]: https://hexdocs.pm/plug/Plug.SSL.html#configure/1
 [hex:finch]: https://hex.pm/packages/finch
 [hex:mint]: https://hex.pm/packages/mint
@@ -110,3 +114,4 @@ Phoenix `force_ssl` Endpoint configuration take an hsts option that defaults to
 [mozilla_tls_recommendations]: https://wiki.mozilla.org/Security/Server_Side_TLS
 [ssl_labs]: https://www.ssllabs.com/ssltest/
 [strict_transport_security_header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+[owasp:cheat_sheet_tls]: https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html

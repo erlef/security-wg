@@ -8,9 +8,9 @@ We welcome feedback and suggestions, especially to public drafts: please open an
 
 # Documents
 
-* [Secure Coding and Deployment Hardening Guidelines](secure_coding_and_deployment_hardening) (draft)
-* [Web Application Security Best Practices for BEAM languages](web_app_security_best_practices_beam) (draft)
-* [Security Vulnerability Disclosure](security_vulnerability_disclosure) (draft)
+* [Secure Coding and Deployment Hardening Guidelines](secure_coding_and_deployment_hardening)
+* [Web Application Security Best Practices for BEAM languages](web_app_security_best_practices_beam)
+* [Security Vulnerability Disclosure](security_vulnerability_disclosure)
 
 # Specifications
 
