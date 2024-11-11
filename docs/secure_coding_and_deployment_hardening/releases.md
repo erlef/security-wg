@@ -5,7 +5,7 @@ previous:
   title: Installing/building the runtime system
 next:
   url: distribution
-  title: Distribution
+  title: Distribution Protocol and EPMD
 ---
 
 * Package a project as a ‘release’ for deployment

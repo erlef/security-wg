@@ -2,7 +2,7 @@
 title: Crash dumps and core dumps
 previous:
   url: distribution
-  title: Distribution
+  title: Distribution Protocol and EPMD
 next:
   url: resources
   title: Resources
