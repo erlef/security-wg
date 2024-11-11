@@ -14,5 +14,5 @@ This section covers some deployment hardening techniques that apply specifically
 
 * [Installing/building the runtime system](installing)
 * [Releases](releases)
-* [Distribution](distribution)
+* [Distribution Protocol and EPMD](distribution)
 * [Crash dumps and core dumps](crash_dumps)

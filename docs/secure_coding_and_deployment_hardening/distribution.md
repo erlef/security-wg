@@ -1,5 +1,5 @@
 ---
-title: Distribution
+title: Distribution Protocol and EPMD
 previous:
   url: releases
   title: Releases
