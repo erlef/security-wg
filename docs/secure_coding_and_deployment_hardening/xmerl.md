@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Erlang standard library: xmerl"
 previous:
   url: public_key

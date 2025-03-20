@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Introduction
 layout: page
 previous:

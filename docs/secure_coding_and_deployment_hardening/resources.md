@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Resources
 layout: page
 previous:

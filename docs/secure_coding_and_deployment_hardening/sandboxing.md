@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Sandboxing untrusted code
 previous:
   url: sensitive_data

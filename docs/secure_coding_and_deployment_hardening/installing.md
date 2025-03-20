@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Installing/building the runtime system
 previous:
   url: deployment_hardening

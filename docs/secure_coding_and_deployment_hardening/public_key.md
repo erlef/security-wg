@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Erlang standard library: public_key"
 previous:
   url: crypto

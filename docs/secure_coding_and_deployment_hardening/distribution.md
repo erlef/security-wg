@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Distribution Protocol and EPMD
 previous:
   url: releases
