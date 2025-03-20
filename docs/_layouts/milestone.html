@@ -1,0 +1,56 @@
+---
+layout: page
+---
+
+<dl class="row">
+  <div class="col">
+    <dt>Initiative</dt>
+    <dd>
+      <a href="..">
+        <span aria-hidden="true">&laquo;</span>
+        Back to Initiative
+      </a>
+    </dd>
+  </div>
+  <div class="col">
+    <dt>Area</dt>
+    <dd>{{ page.area }}</dd>
+  </div>
+  <div class="col">
+    <dt>Status</dt>
+    <dd>
+      {{ page.status }}
+      {% if page.status == "In Progress" %}
+        ({{ page.progress }}%)
+      {% endif %}
+    </dd>
+  </div>
+  <div class="col">
+    <dt>Sponsors</dt>
+    <dd>
+      {% if page.sponsors %}
+        <ul>
+          {% for sponsor in page.sponsors %}
+            <li>
+              {{ sponsor }}
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        -
+      {% endif %}
+    </dd>
+  </div>
+  <div class="col">
+    <dt>Funding</dt>
+    <dd>
+      {% if page.funding_required %}
+        <em>More Funding Required</em>
+      {% else %}
+        <em>Funding Complete</em>
+      {% endif %}
+    </dd>
+  </div>
+</dl>
+
+{{ content }}

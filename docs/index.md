@@ -18,3 +18,7 @@ We welcome feedback and suggestions, especially to public drafts: please open an
 * 'hex' Package URL type
     * Part of [Hex specifications](https://github.com/hexpm/specifications/blob/master/package-url.md)
 * ['otp' Package URL type](specs/otp_purl_type) (draft)
+
+# Initiatives
+
+* [Ægis Supply Chain Security & Compliance Initiative](aegis)
