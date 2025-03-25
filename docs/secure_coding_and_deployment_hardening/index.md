@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Secure Coding and Deployment Hardening Guidelines
 layout: page
 next:

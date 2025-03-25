@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Erlang standard library: ssl"
 previous:
   url: timing_attacks

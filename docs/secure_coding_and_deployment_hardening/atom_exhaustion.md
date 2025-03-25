@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Preventing atom exhaustion
 previous:
   url: secure_coding

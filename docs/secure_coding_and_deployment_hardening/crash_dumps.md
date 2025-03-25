@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Crash dumps and core dumps
 previous:
   url: distribution

@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Secure Coding Recommendations
 previous:
   url: introduction

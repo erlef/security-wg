@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Deployment Hardening
 layout: page
 previous:

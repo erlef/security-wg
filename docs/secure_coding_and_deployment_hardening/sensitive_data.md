@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Protecting sensitive data
 previous:
   url: external_executables

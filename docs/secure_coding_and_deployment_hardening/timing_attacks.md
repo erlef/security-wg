@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Preventing timing attacks
 previous:
   url: sandboxing

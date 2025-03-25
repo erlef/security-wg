@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Serialisation and deserialisation
 previous:
   url: atom_exhaustion

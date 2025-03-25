@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Erlang standard library: inets"
 previous:
   url: ssl

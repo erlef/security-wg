@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Spawning external executables
 previous:
   url: serialisation

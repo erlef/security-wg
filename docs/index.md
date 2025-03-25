@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 Here you can find documents and other resources produced by the Security WG of the [Erlang Ecosystem Foundation](https://erlef.org).
