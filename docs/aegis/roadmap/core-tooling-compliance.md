@@ -6,7 +6,7 @@ progress: 20
 funding_required: false
 sponsors:
   - Ericsson
-  # TODO: Can we disclose the other sponsor?
+  - Herrmann Ultraschall
 index: 5
 previous:
   url: gleam-openchain-compliance

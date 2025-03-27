@@ -99,7 +99,7 @@ description: Supply Chain Security & Compliance Initiative
               </p>
             {% endif %}
             {% if milestone.sponsors %}
-              <ul>
+              <ul class="randomize-order">
                 {% for sponsor in milestone.sponsors %}
                   <li>
                     {{ sponsor }}

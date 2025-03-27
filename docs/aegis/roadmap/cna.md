@@ -6,7 +6,7 @@ progress: 75
 funding_required: false
 sponsors:
   - Ericsson
-  # TODO: Can we disclose the other sponsor?
+  - Herrmann Ultraschall
 index: 4
 previous:
   url: core-tooling-governance-audit

@@ -3,8 +3,8 @@ title: Core Tooling Governance Audit
 area: Governance
 status: Planning
 funding_required: false
-# TODO: Can we disclose the sponsor?
-# sponsors: ...
+sponsors:
+  - Herrmann Ultraschall
 index: 6
 previous:
   url: core-tooling-compliance

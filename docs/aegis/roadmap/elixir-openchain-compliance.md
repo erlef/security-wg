@@ -3,8 +3,8 @@ title: Elixir OpenChain Compliance
 area: Compliance
 status: Done
 funding_required: false
-# TODO: Can we disclose the sponsor?
-# sponsors: ...
+sponsors:
+  - Herrmann Ultraschall
 index: 1
 previous:
   url: erlang-openchain-compliance

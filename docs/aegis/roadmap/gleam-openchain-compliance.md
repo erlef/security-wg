@@ -4,8 +4,8 @@ area: Compliance
 status: In Progress
 progress: 10
 funding_required: false
-# TODO: Can we disclose the sponsor?
-# sponsors: ...
+sponsors:
+  - Herrmann Ultraschall
 index: 2
 previous:
   url: elixir-openchain-compliance
