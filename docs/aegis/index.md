@@ -131,12 +131,17 @@ Sponsorship can be provided through:
     - Enables direct collaboration on critical tasks while also shaping the
       future of the ecosystem.
 
-<!--
-TODO: Check with current sponsors if they want to be mentioned publicly
 ## Sponsors
 
-* Name / Picture
--->
+<div class="sponsors randomize-order mb-5">
+  <a href="https://www.ericsson.com/">
+    <img src="/assets/aegis/sponsors/ericsson.svg" alt="Ericsson" />
+  </a>
+  <a href="https://www.herrmannultraschall.com/">
+    <img src="/assets/aegis/sponsors/herrmann-ultraschall.svg" alt="Herrmann Ultraschall" />
+  </a>
+</div>
+
 
 ## Implementation
 
