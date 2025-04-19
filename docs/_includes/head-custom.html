@@ -1,4 +1,12 @@
 <script type="text/javascript" src="{{ '/assets/js/randomize-order.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
+<script type="text/javascript" src="{{ '/assets/js/anchor.min.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  anchors.add()
+});
+</script>
+
 <style>
   .sponsors {
     display: flex;
