@@ -7,6 +7,7 @@ funding_required: false
 sponsors:
   - Ericsson
   - Herrmann Ultraschall
+  - Dashbit
 index: 5
 previous:
   url: gleam-openchain-compliance

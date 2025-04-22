@@ -7,6 +7,7 @@ funding_required: false
 sponsors:
   - Ericsson
   - Herrmann Ultraschall
+  - Dashbit
 index: 4
 previous:
   url: core-tooling-governance-audit

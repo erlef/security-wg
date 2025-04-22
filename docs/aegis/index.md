@@ -140,6 +140,9 @@ Sponsorship can be provided through:
   <a href="https://www.herrmannultraschall.com/">
     <img src="/assets/aegis/sponsors/herrmann-ultraschall.svg" alt="Herrmann Ultraschall" />
   </a>
+  <a href="https://dashbit.co/">
+    <img src="/assets/aegis/sponsors/dashbit.png" alt="Dashbit" />
+  </a>
 </div>
 
 
