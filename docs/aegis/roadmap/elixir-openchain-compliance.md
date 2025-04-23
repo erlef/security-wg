@@ -5,6 +5,7 @@ status: Done
 funding_required: false
 sponsors:
   - Herrmann Ultraschall
+  - Dashbit
 index: 1
 previous:
   url: erlang-openchain-compliance
