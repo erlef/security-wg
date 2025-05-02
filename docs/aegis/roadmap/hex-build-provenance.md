@@ -3,6 +3,8 @@ title: Hex Build Provenance
 area: Supply Chain
 status: Planning
 funding_required: true
+sponsors:
+  - HCA Healthcare
 index: 11
 previous:
   url: hex-api-credential-security
