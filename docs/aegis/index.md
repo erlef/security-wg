@@ -143,6 +143,9 @@ Sponsorship can be provided through:
   <a href="https://dashbit.co/">
     <img src="/assets/aegis/sponsors/dashbit.png" alt="Dashbit" />
   </a>
+  <a href="https://hcahealthcare.com/">
+    <img src="/assets/aegis/sponsors/hca.png" alt="HCA Healthcare" />
+  </a>
 </div>
 
 
