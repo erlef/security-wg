@@ -22,3 +22,4 @@ We welcome feedback and suggestions, especially to public drafts: please open an
 ## Initiatives
 
 * [Ægis Supply Chain Security & Compliance Initiative](aegis)
+* [Erlang Ecosystem Foundation CNA](https://cna.erlef.org)
