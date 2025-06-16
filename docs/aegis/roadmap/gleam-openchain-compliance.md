@@ -6,7 +6,7 @@ progress: 10
 funding_required: false
 sponsors:
   - Herrmann Ultraschall
-index: 2
+index: 3
 previous:
   url: elixir-openchain-compliance
   title: Elixir OpenChain Compliance

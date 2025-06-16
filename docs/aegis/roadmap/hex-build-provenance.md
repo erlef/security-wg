@@ -5,7 +5,7 @@ status: Planning
 funding_required: true
 sponsors:
   - HCA Healthcare
-index: 11
+index: 5
 previous:
   url: hex-api-credential-security
   title: Hex API Credential Security

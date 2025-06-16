@@ -2,7 +2,7 @@
 title: Core Tooling Compliance
 area: Compliance
 status: In Progress
-progress: 20
+progress: 30
 funding_required: false
 sponsors:
   - Ericsson

@@ -1,14 +1,13 @@
 ---
 title: Erlang Ecosystem Foundation CNA
 area: Compliance
-status: In Progress
-progress: 75
+status: Done
 funding_required: false
 sponsors:
   - Ericsson
   - Herrmann Ultraschall
   - Dashbit
-index: 4
+index: 2
 previous:
   url: core-tooling-governance-audit
   title: Core Tooling Governance Audit
