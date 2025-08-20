@@ -23,3 +23,21 @@ We welcome feedback and suggestions, especially to public drafts: please open an
 
 * [Ægis Supply Chain Security & Compliance Initiative](aegis)
 * [Erlang Ecosystem Foundation CNA](https://cna.erlef.org)
+
+<section aria-labelledby="latest-articles">
+    <header class="d-flex justify-content-between align-items-center mb-4">
+        <h2 id="latest-articles" class="mb-0">Latest Articles</h2>
+        <a href="{{ '/articles/' | relative_url }}" class="btn btn-link">View all</a>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            {% assign reversed_articles = site.articles | reverse %}
+            {% for article in reversed_articles limit:3 %}
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    {% include article-teaser.html article=article forloop=forloop %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
