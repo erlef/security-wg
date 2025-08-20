@@ -1,0 +1,45 @@
+<section class="article-teaser mb-4" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+  <meta itemprop="position" content="{{ forloop.index }}" />
+
+  <article class="card shadow-sm h-100" itemscope itemtype="https://schema.org/Article">
+    <div class="card-body d-flex flex-column">
+      <header class="mb-3">
+        <h2 class="h5 card-title mb-1" itemprop="headline">
+          <a class="stretched-link text-decoration-none" href="{{ article.publication_url }}"
+            title="{{ article.title | escape }}" itemprop="mainEntityOfPage url" rel="bookmark noopener">
+            {{ article.title }}
+          </a>
+        </h2>
+
+        <div class="text-muted small">
+          by
+          <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <span itemprop="name">{{ article.publisher }}</span>
+          </span>
+          <span aria-hidden="true">·</span>
+          <time class="text-nowrap" datetime="{{ article.publication_date | date_to_xmlschema }}"
+            itemprop="datePublished">
+            {{ article.publication_date | date: "%-d %B %Y" }}
+          </time>
+          {% if article.last_modified_at %}
+          <meta itemprop="dateModified" content="{{ article.last_modified_at | date_to_xmlschema }}">
+          {% else %}
+          <meta itemprop="dateModified" content="{{ article.publication_date | date_to_xmlschema }}">
+          {% endif %}
+        </div>
+      </header>
+
+      <!-- Optional teaser/excerpt -->
+      <div class="card-text mb-3" itemprop="description">
+        {{ article.excerpt | default: article }}
+      </div>
+
+      <footer class="mt-auto pt-2">
+        <a class="btn btn-outline-primary btn-sm" href="{{ article.publication_url }}"
+          title="{{ article.title | escape }}" rel="noopener" itemprop="url">
+          Read more
+        </a>
+      </footer>
+    </div>
+  </article>
+</section>
