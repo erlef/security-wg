@@ -1,0 +1,22 @@
+---
+layout: page
+title: Articles
+description: Latest articles curated from various publishers.
+---
+
+<!-- Page container -->
+<div class="container my-5" itemscope itemtype="https://schema.org/CollectionPage">
+    <!-- ItemList structured data wrapper -->
+    {% assign total_articles = site.articles | size %}
+    <main class="row" itemprop="mainEntity" itemscope itemtype="https://schema.org/ItemList">
+        <meta itemprop="numberOfItems" content="{{ total_articles }}">
+        <meta itemprop="itemListOrder" content="https://schema.org/ItemListOrderAscending">
+
+        {% assign reversed_articles = site.articles | reverse %}
+        {% for article in reversed_articles %}
+        <div class="col-12 col-md-6 col-lg-4 d-flex mb-4">
+            {% include article-teaser.html article=article forloop=forloop %}
+        </div>
+        {% endfor %}
+    </main>
+</div>

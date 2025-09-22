@@ -10,3 +10,7 @@ defaults:
   values:
     layout: "milestone"
     is_aegis_milestone: true
+collections:
+  articles:
+    output: false
+    sort_by: date
