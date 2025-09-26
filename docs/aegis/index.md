@@ -114,6 +114,11 @@ description: Supply Chain Security & Compliance Initiative
   </table>
 </div>
 
+
+## Progress Updates
+
+* [EEF Security Update 2025 Q3](/assets/aegis/updates/2025-q3.pdf)
+
 ## Funding
 
 Achieving the objectives and milestones on our roadmap requires external
