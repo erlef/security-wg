@@ -4,7 +4,7 @@ area: Supply Chain
 status: In Progress
 funding_required: false
 supporters:
-  - To Be Announced
+  - Alpha-Omega
 index: 4
 progress: 25
 previous:
