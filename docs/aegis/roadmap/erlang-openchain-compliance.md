@@ -3,7 +3,7 @@ title: Erlang OpenChain Compliance
 area: Compliance
 status: Done
 funding_required: false
-sponsors:
+supporters:
   - Ericsson
 index: 0
 next:

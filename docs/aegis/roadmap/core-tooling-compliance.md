@@ -4,7 +4,7 @@ area: Compliance
 status: Planning
 progress: 30
 funding_required: false
-sponsors:
+supporters:
   - Ericsson
   - Herrmann Ultraschall
   - Dashbit

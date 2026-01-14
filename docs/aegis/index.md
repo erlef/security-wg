@@ -55,7 +55,7 @@ description: Supply Chain Security & Compliance Initiative
 9. **Cultivate Long-Term Funding & Governance**
     
     Transition from single large grants to a diversified funding
-    model—attracting industry sponsorships and broad community support to ensure
+    model—attracting industry support and broad community support to ensure
     financial stability.
     
 10. **Promote Ecosystem Growth & Adoption**
@@ -73,7 +73,7 @@ description: Supply Chain Security & Compliance Initiative
         <th scope="col">Name</th>
         <th scope="col">Area</th>
         <th scope="col">Status</th>
-        <th scope="col">Sponsors</th>
+        <th scope="col">Supporters</th>
       </tr>
     </thead>
     <tbody>
@@ -98,11 +98,11 @@ description: Supply Chain Security & Compliance Initiative
                 <em>More Funding Required</em>
               </p>
             {% endif %}
-            {% if milestone.sponsors %}
+            {% if milestone.supporters %}
               <ul class="randomize-order">
-                {% for sponsor in milestone.sponsors %}
+                {% for supporter in milestone.supporters %}
                   <li>
-                    {{ sponsor }}
+                    {{ supporter }}
                   </li>
                 {% endfor %}
               </ul>
@@ -124,7 +124,7 @@ description: Supply Chain Security & Compliance Initiative
 Achieving the objectives and milestones on our roadmap requires external
 funding. We welcome contributions in various forms. If you’d like to support
 this initiative, please contact us at [sponsorship@erlef.org](mailto:sponsorship@erlef.org).
-Sponsorship can be provided through:
+Support can be provided through:
 
 1. **Financial Contributions**
     - Directly fund key activities such as security audits, engineering work,
@@ -136,20 +136,20 @@ Sponsorship can be provided through:
     - Enables direct collaboration on critical tasks while also shaping the
       future of the ecosystem.
 
-## Sponsors
+## Supporters
 
-<div class="sponsors randomize-order mb-5">
+<div class="supporters randomize-order mb-5">
   <a href="https://www.ericsson.com/">
-    <img src="/assets/aegis/sponsors/ericsson.svg" alt="Ericsson" />
+    <img src="/assets/aegis/supporters/ericsson.svg" alt="Ericsson" />
   </a>
   <a href="https://www.herrmannultraschall.com/">
-    <img src="/assets/aegis/sponsors/herrmann-ultraschall.svg" alt="Herrmann Ultraschall" />
+    <img src="/assets/aegis/supporters/herrmann-ultraschall.svg" alt="Herrmann Ultraschall" />
   </a>
   <a href="https://dashbit.co/">
-    <img src="/assets/aegis/sponsors/dashbit.png" alt="Dashbit" />
+    <img src="/assets/aegis/supporters/dashbit.png" alt="Dashbit" />
   </a>
   <a href="https://hcahealthcare.com/">
-    <img src="/assets/aegis/sponsors/hca.png" alt="HCA Healthcare" />
+    <img src="/assets/aegis/supporters/hca.png" alt="HCA Healthcare" />
   </a>
 </div>
 
@@ -172,7 +172,7 @@ primary ways implementation can happen:
     The EEF can fund stipends or grants for developers, maintainers, or other
     specialists in the community.
     
-3. **Sponsor-Provided Implementation**
-    
-    A sponsor may opt to contribute manpower directly, having their own team or
+3. **Supporter-Provided Implementation**
+
+    A supporter may opt to contribute manpower directly, having their own team or
     contractors develop and integrate new capabilities.

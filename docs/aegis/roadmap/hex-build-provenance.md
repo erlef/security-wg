@@ -3,7 +3,7 @@ title: Hex Build Provenance
 area: Supply Chain
 status: Planning
 funding_required: true
-sponsors:
+supporters:
   - HCA Healthcare
 index: 7
 previous:

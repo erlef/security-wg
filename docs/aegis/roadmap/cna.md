@@ -3,7 +3,7 @@ title: Erlang Ecosystem Foundation CNA
 area: Compliance
 status: Done
 funding_required: false
-sponsors:
+supporters:
   - Ericsson
   - Herrmann Ultraschall
   - Dashbit

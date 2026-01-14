@@ -4,7 +4,7 @@ area: Compliance
 status: In Progress
 progress: 10
 funding_required: false
-sponsors:
+supporters:
   - Herrmann Ultraschall
 index: 5
 previous:

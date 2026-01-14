@@ -3,7 +3,7 @@ title: Elixir OpenChain Compliance
 area: Compliance
 status: Done
 funding_required: false
-sponsors:
+supporters:
   - Herrmann Ultraschall
   - Dashbit
 index: 1

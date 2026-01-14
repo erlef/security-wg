@@ -3,7 +3,7 @@ title: Source SBoM
 area: Supply Chain
 status: In Progress
 funding_required: false
-sponsors:
+supporters:
   - To Be Announced
 index: 3
 progress: 75

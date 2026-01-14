@@ -3,7 +3,7 @@ title: Core Tooling Governance Audit
 area: Governance
 status: Planning
 funding_required: false
-sponsors:
+supporters:
   - Herrmann Ultraschall
 index: 8
 previous:
