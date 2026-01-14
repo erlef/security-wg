@@ -11,37 +11,28 @@ previous:
 
 ## Goals
 
-SBoM Support in the default toolchain and integration into common industry
-Tooling
+Runtime SBoM introspection, Cryptography SBoM, and Build SBoM for release
+artifacts and Docker images.
 
 ## Impact
 
-By integrating Software Bill of Materials (SBoM) support into the default Erlang
-ecosystem toolchain and aligning with industry standards (SPDX 3.0.1,
-CycloneDX 1.6), this milestone significantly increases visibility and
-traceability of dependencies across source, build, runtime, and cryptographic
-layers. By offering plugins for common build tools (mix, rebar3, Gleam),
-integrating with scanning solutions (ORT, ScanCode), and storing SBoM data at
-both compile and runtime, developers gain immediate introspection and
-verification capabilities—even for foreign dependencies like NIFs or JS bundles.
-Extending these practices to the core infrastructure (Hex package manager,
-official Docker images, and key language projects) ensures a complete, auditable
-record of all software components, fostering stronger security, compliance, and
-trust within the Erlang and Elixir communities.
+By enabling runtime SBoM introspection in the Erlang VM and providing
+Cryptography and Build SBoMs for core infrastructure releases, this milestone
+completes the SBoM coverage across the entire software lifecycle. Runtime
+introspection allows developers to query dependency information from running
+systems, while Cryptography SBoMs document cryptographic algorithm usage for
+compliance requirements. Build SBoMs for Docker images and release artifacts
+ensure a complete, auditable record of all software components in production
+deployments, fostering stronger security, compliance, and trust within the
+Erlang and Elixir communities.
 
 ## Deliverables
 
-* Integrations into ORT (mix, rebar3, Gleam)
-* Integrations into ScanCode (mix, rebar3, Gleam)
-* Build Tools (or plugins for build tools) can generate SBoMs
-  - Type: Source, Build, Runtime, & Cryptography
-  - Formats: SPDX, CycloneDX
-* Erlang Runtime Introspection -*Details TBD*
+* Erlang Runtime Introspection - *Details TBD*
 * Core Infrastructure SBoM
   - Languages (Erlang / Gleam / Elixir)
   - Separate Build Tools (rebar3)
   - Package Manager (Hex)
-  - offer Source SBoM
   - offer Cryptography SBoM
   - offer Build SBoM for Builds
     * [Hex.pm](http://Hex.pm) Bob Docker Images

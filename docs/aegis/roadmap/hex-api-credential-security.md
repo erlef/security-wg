@@ -3,13 +3,13 @@ title: Hex API Credential Security
 area: Supply Chain
 status: Planning
 funding_required: true
-index: 10
+index: 11
 previous:
   url: hex-account-security
   title: Hex Account Security
 next:
-  url: hex-build-provenance
-  title: Hex Build Provenance
+  url: hex-asset-side-loading
+  title: Hex Asset Side-Loading
 ---
 
 ## Goals

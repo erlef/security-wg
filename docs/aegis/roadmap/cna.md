@@ -9,11 +9,11 @@ sponsors:
   - Dashbit
 index: 2
 previous:
-  url: core-tooling-governance-audit
-  title: Core Tooling Governance Audit
+  url: elixir-openchain-compliance
+  title: Elixir OpenChain Compliance
 next:
-  url: supply-chain-security-audit
-  title: Supply Chain Security Audit
+  url: source-sbom
+  title: Source SBoM
 ---
 
 ## Goal

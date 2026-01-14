@@ -11,8 +11,8 @@ previous:
   url: erlang-openchain-compliance
   title: Erlang OpenChain Compliance
 next:
-  url: gleam-openchain-compliance
-  title: Gleam OpenChain Compliance
+  url: cna
+  title: Erlang Ecosystem Foundation CNA
 ---
 
 ## Goal

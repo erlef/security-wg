@@ -5,8 +5,8 @@ status: Planning
 funding_required: true
 index: 12
 previous:
-  url: hex-build-provenance
-  title: Hex Build Provenance
+  url: hex-api-credential-security
+  title: Hex API Credential Security
 next:
   url: sbom
   title: SBoM

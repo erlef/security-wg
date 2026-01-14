@@ -1,20 +1,20 @@
 ---
 title: Core Tooling Compliance
 area: Compliance
-status: In Progress
+status: Planning
 progress: 30
 funding_required: false
 sponsors:
   - Ericsson
   - Herrmann Ultraschall
   - Dashbit
-index: 5
+index: 6
 previous:
   url: gleam-openchain-compliance
   title: Gleam OpenChain Compliance
 next:
-  url: core-tooling-governance-audit
-  title: Core Tooling Governance Audit
+  url: hex-build-provenance
+  title: Hex Build Provenance
 ---
 
 ## Goal

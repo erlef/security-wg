@@ -3,7 +3,7 @@ title: Hex Account Security
 area: Supply Chain
 status: Planning
 funding_required: true
-index: 9
+index: 10
 previous:
   url: hex-vulnerability-handling
   title: Hex Vulnerability Handling

@@ -5,13 +5,13 @@ status: Planning
 funding_required: true
 sponsors:
   - HCA Healthcare
-index: 5
+index: 7
 previous:
-  url: hex-api-credential-security
-  title: Hex API Credential Security
+  url: core-tooling-compliance
+  title: Core Tooling Compliance
 next:
-  url: hex-asset-side-loading
-  title: Hex Asset Side-Loading
+  url: core-tooling-governance-audit
+  title: Core Tooling Governance Audit
 ---
 
 ## Goals

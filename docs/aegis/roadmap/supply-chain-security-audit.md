@@ -1,15 +1,18 @@
 ---
 title: Supply Chain Security Audit
 area: Supply Chain
-status: Planning
-funding_required: true
-index: 7
+status: In Progress
+funding_required: false
+sponsors:
+  - To Be Announced
+index: 4
+progress: 25
 previous:
-  url: cna
-  title: Erlang Ecosystem Foundation CNA
+  url: source-sbom
+  title: Source SBoM
 next:
-  url: hex-vulnerability-handling
-  title: Hex Vulnerability Handling
+  url: gleam-openchain-compliance
+  title: Gleam OpenChain Compliance
 ---
 
 ## Goals

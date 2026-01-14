@@ -5,13 +5,13 @@ status: Planning
 funding_required: false
 sponsors:
   - Herrmann Ultraschall
-index: 6
+index: 8
 previous:
-  url: core-tooling-compliance
-  title: Core Tooling Compliance
+  url: hex-build-provenance
+  title: Hex Build Provenance
 next:
-  url: cna
-  title: Erlang Ecosystem Foundation CNA
+  url: hex-vulnerability-handling
+  title: Hex Vulnerability Handling
 ---
 
 ## Goal

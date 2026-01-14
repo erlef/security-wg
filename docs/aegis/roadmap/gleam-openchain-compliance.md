@@ -6,10 +6,10 @@ progress: 10
 funding_required: false
 sponsors:
   - Herrmann Ultraschall
-index: 3
+index: 5
 previous:
-  url: elixir-openchain-compliance
-  title: Elixir OpenChain Compliance
+  url: supply-chain-security-audit
+  title: Supply Chain Security Audit
 next:
   url: core-tooling-compliance
   title: Core Tooling Compliance
