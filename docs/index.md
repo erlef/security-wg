@@ -15,9 +15,8 @@ We welcome feedback and suggestions, especially to public drafts: please open an
 
 ## Specifications
 
-* 'hex' Package URL type
-    * Part of [Hex specifications](https://github.com/hexpm/specifications/blob/master/package-url.md)
-* ['otp' Package URL type](specs/otp_purl_type) (draft)
+* ['hex' Package URL type](https://github.com/package-url/purl-spec/blob/main/types-doc/hex-definition.md)
+* ['otp' Package URL type](https://github.com/package-url/purl-spec/blob/main/types-doc/otp-definition.md)
 
 ## Initiatives
 
