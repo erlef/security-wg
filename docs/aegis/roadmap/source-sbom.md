@@ -2,7 +2,7 @@
 title: Source SBoM
 area: Supply Chain
 status: In Progress
-funding_required: false
+funding_required: true
 supporters:
   - To Be Announced
 index: 3
@@ -35,18 +35,31 @@ communities.
 
 ## Deliverables
 
-* Integrations into ORT (mix, rebar3, Gleam)
-* Integrations into ScanCode (mix, rebar3, Gleam)
-* Build Tools (or plugins for build tools) can generate SBoMs
-  - Type: Source, Build, Runtime, & Cryptography
-  - Formats: SPDX, CycloneDX
+* [X] Integrations into ORT (mix, rebar3, Gleam)
+* [X] Integrations into ScanCode (mix, rebar3, Gleam)
+* [ ] Build Tools (or plugins for build tools) can generate SBoMs
+  - [X] Type: Source
+  - [ ] Format: SPDX
+  - [X] Format: CycloneDX
 * Core Infrastructure Source SBoM
-  - Languages (Erlang / Gleam / Elixir)
-  - Separate Build Tools (rebar3)
-  - Package Manager (Hex)
-  - offer Source SBoM
+  - [X] Language: Erlang
+  - [ ] Language: Gleam
+  - [X] Language: Elixir
+  - [ ] Build Tools: rebar3
+  - [ ] Package Manager: Hex
 
 ## Relevant Standards
 
 * [SPDX 3.0.1](https://spdx.github.io/spdx-spec/v3.0.1/)
 * [CycloneDX 1.6](https://ecma-international.org/publications-and-standards/standards/ecma-424/)
+
+## Results
+
+* [mix_sbom](https://github.com/erlef/mix_sbom)
+* [rebar3_sbom](https://github.com/erlef/rebar3_sbom)
+* [ORT Mix Plugin](https://oss-review-toolkit.org/ort/docs/plugins/package-managers/Mix)
+* [ORT Rebar3 Plugin](https://oss-review-toolkit.org/ort/docs/plugins/package-managers/Rebar3)
+* [ORT Gleam Plugin](https://oss-review-toolkit.org/ort/docs/plugins/package-managers/Gleam)
+* [Gleam Source Bill of Materials](https://gleam.run/documentation/source-bill-of-materials/)
+* [rebar3 SBoM Plugin](https://www.rebar3.org/docs/configuration/plugins/#software-bill-of-materials-sbom)
+* [Elixir SBoM Documentation](https://hexdocs.pm/elixir/main/sbom.html)

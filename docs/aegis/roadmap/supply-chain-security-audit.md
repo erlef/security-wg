@@ -6,7 +6,7 @@ funding_required: false
 supporters:
   - Alpha-Omega
 index: 4
-progress: 25
+progress: 75
 previous:
   url: source-sbom
   title: Source SBoM
@@ -46,3 +46,7 @@ proceed from a stable, trustworthy foundation.
   - [`elixir-lang/elixir`](https://github.com/elixir-lang/elixir) - Mix Build Tool
   - [`gleam-lang/gleam`](https://github.com/gleam-lang/gleam) - Gleam Build Tool
 * Remediation of findings
+
+## Results
+
+* [Alpha-Omega Engagement](https://github.com/ossf/alpha-omega/tree/main/alpha/engagements/2026/Erlang%20Ecosystem%20Foundation%2C%20Inc.%20(EEF))

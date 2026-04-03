@@ -3,8 +3,6 @@ title: Hex Build Provenance
 area: Supply Chain
 status: Planning
 funding_required: true
-supporters:
-  - HCA Healthcare
 index: 7
 previous:
   url: core-tooling-compliance

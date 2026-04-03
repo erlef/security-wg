@@ -23,4 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
     max-width: 250px;
     height: auto;
   }
+
+  .task-list-item:has(> .task-list-item-checkbox) {
+    list-style-type: none;
+    margin-left: -1.35em;
+  }
+  .task-list-item-checkbox {
+    margin-right: 0.4em;
+  }
 </style>
