@@ -137,10 +137,6 @@ statements:
 
       The Ægis objectives around trusted builds, supply chain transparency, and continuous vulnerability management address real operational risks we face today. The grant's focus on secure publishing workflows and improved tooling for compliance will allow our team to meet the security expectations of our customers without building and maintaining that infrastructure ourselves. We are committed to adopting the practices and tooling that come out of this effort and see this grant as continued investment to ensure that our underlying infrastructure will provide a strong foundation for us to build and grow our product.
   - company:
-    person: David Matz
-    projects: []
-    text: 'Gleam is cool but pulls in a bunch of dependencies '
-  - company:
     person: Edgar Gomes de Araujo
     projects: []
     text: 'With the rapid advancement of AI-generated code, it’s becoming increasingly challenging for humans to stay fully informed and aware of all the details. Consequently, the risk of injection attacks and other attack vectors along the supply chain is on the rise. Investing in protection, verification, and validation of the protected supply chain is of utmost importance. '
@@ -442,10 +438,6 @@ statements:
     projects: []
     text: Erlang is used in a large number of places, more than many companies will willingly admit, OpenRiak being just one of them. That said, without adequate security, these systems that have been quietly running the modern world in the background are potentially vulnerable as new bugs and security risks become known. By having this grant to stay ahead of the curve, we would ensure that such systems continue to serve their purposes successfully.
   - company:
-    person: Nico Hoogervorst
-    projects: []
-    text: Owasp A03:2025 Software Supply Chain Failures
-  - company:
     person: Niklas Ögren
     projects: []
     text: We work every day with uplifting, securing our build environment, and hunting bugs. We want our 3pp's to have as high modern level security as possible.
@@ -457,10 +449,6 @@ statements:
     person: Olivier Boudeville
     projects: []
     text: Not wanting attacks to be propagated through dependencies.
-  - company: oban-pro
-    person: Parker Selbert
-    projects: []
-    text: 'Our business hinges on our ability to deliver a commercial package that customers can trust. For them to trust our package, they need to '
   - company:
     person: Paulo Valente
     projects:

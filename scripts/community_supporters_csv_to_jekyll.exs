@@ -137,17 +137,32 @@ company_name_overrides = %{
   "KK TI Tokyo" => "TI Tokyo"
 }
 
+# --- People overrides ---
+# Drop people entirely (from people, statements, and all outputs).
+# Each entry is a person name string.
+
+dropped_people = [
+  "Matthew"
+]
+
 # --- Statement overrides ---
 # Drop statements that are not real statements (e.g. accidentally entered a URL).
 # Each entry is {person_name, statement_text}.
 
 dropped_statements = [
-  {"Srikanth Kyatham", "https://hex.pm/packages/ash"}
+  {"Srikanth Kyatham", "https://hex.pm/packages/ash"},
+  # Not a real statement, mildly negative framing
+  {"David Matz", "Gleam is cool but pulls in a bunch of dependencies "},
+  # Not a statement, just an OWASP label
+  {"Nico Hoogervorst", "Owasp A03:2025 Software Supply Chain Failures"},
+  # Truncated/incomplete sentence
+  {"Parker Selbert", "Our business hinges on our ability to deliver a commercial package that customers can trust. For them to trust our package, they need to "}
 ]
 
 opted_in_rows =
   Enum.filter(data_rows, fn row ->
-    col.(row, "Include my name on grant support webpage (Yes)") == "true"
+    col.(row, "Include my name on grant support webpage (Yes)") == "true" and
+      col.(row, "Your name") not in dropped_people
   end)
 
 # --- Build companies map (deduplicated by name) ---
