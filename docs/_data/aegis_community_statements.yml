@@ -406,10 +406,6 @@ statements:
     projects: []
     text: We support this because supply-chain security and trusted builds are important not only for our project, but for the health of the ecosystem as a whole. The Rational Prepper is built around trust, explainability, and dependable operation, and those goals are reinforced by stronger ecosystem-level assurance. Funding Ægis-aligned work would help improve the reliability and trustworthiness of the tools and infrastructure that projects like ours depend on.
   - company:
-    person: Mironov Artem
-    projects: []
-    text: I develop applications and recently started learning Erlang/Elixir. In my opinion, this language ecosystem is unique — for my tasks, it's the best solution.
-  - company:
     person: Mohamed Hegazy
     projects: []
     text: Supply-chain attacks are becoming more and more common. We all rely on open-source and protecting the Erlang and Beam ecosystems from these types of attacks is more important now than ever before.
@@ -515,10 +511,6 @@ statements:
     person: Robert Carbone
     projects: []
     text: "As a long time Erlang programmer and founding member of the OpenRiak Working Group, I strongly support the goals of the Ægis Initiative. Supply-chain security is critical for ensuring the integrity & trustworthiness of the BEAM ecosystem, especially as we(my personal company, colleagues, and the OpenRiak initiative) rely on the ability to COMMUNICATED stability & security to stakeholders in order to gain technological adoption. Trusted builds, verifiable package provenance, and secure publishing methods are foundational to protecting both developers and end-users in an increasingly complex and regulated environment. Let's remember, Erlang (and Elixir) are used as the backbone of GLOBAL information exchange— there are few better places to invest in than this cause. From what I understand, the EEF is leading the way in this field and I am not only excited and eager to give the Aegis Project my support, but urge you to do the same. The objectives of the EEF/Ægis Project is in alignment with the long-term success and resilience of the Erlang community and with the many other projects I support on a daily basis. I see this grant as an opportunity to advance these goals and strengthen our foundation. "
-  - company:
-    person: Robert French
-    projects: []
-    text: 'Elixir is the future. '
   - company: mythic-insight
     person: Robert Prehn
     projects: []

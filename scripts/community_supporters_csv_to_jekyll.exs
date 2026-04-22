@@ -156,7 +156,11 @@ dropped_statements = [
   # Not a statement, just an OWASP label
   {"Nico Hoogervorst", "Owasp A03:2025 Software Supply Chain Failures"},
   # Truncated/incomplete sentence
-  {"Parker Selbert", "Our business hinges on our ability to deliver a commercial package that customers can trust. For them to trust our package, they need to "}
+  {"Parker Selbert", "Our business hinges on our ability to deliver a commercial package that customers can trust. For them to trust our package, they need to "},
+  # Not a statement about the grant
+  {"Robert French", "Elixir is the future. "},
+  # Doesn't address supply chain security or grant goals
+  {"Mironov Artem", "I develop applications and recently started learning Erlang/Elixir. In my opinion, this language ecosystem is unique — for my tasks, it's the best solution."}
 ]
 
 opted_in_rows =
