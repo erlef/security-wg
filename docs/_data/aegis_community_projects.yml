@@ -66,6 +66,9 @@ projects:
   - repo: OpenRiak
     type: github
     url: https://github.com/OpenRiak
+  - repo: pentacent/keila
+    type: github
+    url: https://github.com/pentacent/keila/
   - repo: PragTob/deep_merge
     type: github
     url: https://github.com/PragTob/deep_merge
@@ -90,9 +93,15 @@ projects:
   - name: ash
     type: hex
     url: https://hex.pm/packages/ash
+  - name: bash
+    type: hex
+    url: https://hex.pm/packages/bash
   - name: bonfire
     type: hex
     url: https://hex.pm/orgs/bonfire
+  - name: date_time_parser
+    type: hex
+    url: https://hex.pm/packages/date_time_parser
   - name: erlfdb
     type: hex
     url: https://hex.pm/packages/erlfdb
@@ -126,6 +135,9 @@ projects:
   - name: operating_system
     type: hex
     url: https://hex.pm/packages/operating_system
+  - name: phantom_mcp
+    type: hex
+    url: https://hex.pm/packages/phantom_mcp
   - name: status_code
     type: hex
     url: https://hex.pm/packages/status_code
@@ -147,6 +159,9 @@ projects:
   - label: code.carverauto.dev/carverauto/serviceradar
     type: other
     url: https://code.carverauto.dev/carverauto/serviceradar
+  - label: couchdb.apache.org
+    type: other
+    url: https://couchdb.apache.org
   - label: epsrc-stardust.github.io
     type: other
     url: https://epsrc-stardust.github.io
@@ -162,6 +177,9 @@ projects:
   - label: photoasso.fr
     type: other
     url: https://photoasso.fr
+  - label: plc.inf.elte.hu/erlang
+    type: other
+    url: https://plc.inf.elte.hu/erlang
   - label: tangled.org/ollie.earth/eater
     type: other
     url: https://tangled.org/ollie.earth/eater

@@ -142,7 +142,7 @@ company_name_overrides = %{
 # Each entry is a person name string.
 
 dropped_people = [
-  "Matthew"
+  "Matthew "
 ]
 
 # --- Statement overrides ---
@@ -163,6 +163,13 @@ dropped_statements = [
   {"Mironov Artem", "I develop applications and recently started learning Erlang/Elixir. In my opinion, this language ecosystem is unique — for my tasks, it's the best solution."}
 ]
 
+# All rows where submission is valid (used for companies and projects)
+all_rows =
+  Enum.filter(data_rows, fn row ->
+    col.(row, "Submitted at") != ""
+  end)
+
+# Rows where the person opted in to show their name
 opted_in_rows =
   Enum.filter(data_rows, fn row ->
     col.(row, "Include my name on grant support webpage (Yes)") == "true" and
@@ -172,7 +179,7 @@ opted_in_rows =
 # --- Build companies map (deduplicated by name) ---
 
 companies =
-  opted_in_rows
+  all_rows
   |> Enum.filter(fn row ->
     col.(row, "Representing (Company)") == "true" and
       col.(row, "Include Company on grant support webpage (Yes)") == "true"
@@ -196,7 +203,7 @@ companies =
 # --- Build projects map (deduplicated by url) ---
 
 projects =
-  opted_in_rows
+  all_rows
   |> Enum.filter(fn row -> col.(row, "Representing (Project)") == "true" end)
   |> Enum.flat_map(fn row ->
     [
@@ -292,46 +299,87 @@ people =
 
 # --- Build statements list ---
 
-statements =
-  opted_in_rows
-  |> Enum.map(fn row ->
-    text = col.(row, "Statement supporting the goals of the grant")
+build_statement = fn row, person ->
+  text = col.(row, "Statement supporting the goals of the grant")
+  representing_company = col.(row, "Representing (Company)") == "true"
+  representing_project = col.(row, "Representing (Project)") == "true"
 
-    representing_company = col.(row, "Representing (Company)") == "true"
-    representing_project = col.(row, "Representing (Project)") == "true"
+  company_slug =
+    if representing_company and col.(row, "Include Company on grant support webpage (Yes)") == "true" do
+      col.(row, "Company") |> then(&Map.get(company_name_overrides, &1, &1)) |> slugify.()
+    else
+      nil
+    end
 
-    company_slug =
-      if representing_company and col.(row, "Include Company on grant support webpage (Yes)") == "true" do
-        col.(row, "Company") |> then(&Map.get(company_name_overrides, &1, &1)) |> slugify.()
-      else
-        nil
-      end
+  project_urls =
+    if representing_project do
+      [
+        col.(row, "hex or repo url - 1"),
+        col.(row, "hex or repo url - 2"),
+        col.(row, "hex or repo url - 3")
+      ]
+      |> Enum.reject(&(&1 == "" or is_nil(&1)))
+      |> Enum.map(&normalize_url.(&1))
+    else
+      []
+    end
 
-    project_urls =
-      if representing_project do
-        [
-          col.(row, "hex or repo url - 1"),
-          col.(row, "hex or repo url - 2"),
-          col.(row, "hex or repo url - 3")
-        ]
-        |> Enum.reject(&(&1 == "" or is_nil(&1)))
-        |> Enum.map(&normalize_url.(&1))
-      else
-        []
-      end
+  %{
+    "person" => person,
+    "company" => company_slug,
+    "projects" => project_urls,
+    "text" => text
+  }
+end
 
-    %{
-      "person" => col.(row, "Your name"),
-      "company" => company_slug,
-      "projects" => project_urls,
-      "text" => text
-    }
+resolve_author = fn statement, companies_list ->
+  cond do
+    statement["person"] ->
+      statement["person"]
+
+    statement["company"] ->
+      company = Enum.find(companies_list, fn c -> c["slug"] == statement["company"] end)
+      if company, do: company["name"], else: nil
+
+    statement["projects"] != [] ->
+      url = hd(statement["projects"])
+      url
+      |> String.replace(~r|^https?://hex\.pm/packages/([^/]+)/?$|, "\\1")
+      |> String.replace(~r|^https?://github\.com/([^/]+(?:/[^/]+)?)/?$|, "\\1")
+      |> String.replace(~r|^https?://(?:www\.)?|, "")
+      |> String.trim_trailing("/")
+
+    true ->
+      nil
+  end
+end
+
+# Opted-out rows that have a statement and represent a company or project
+anonymous_statement_rows =
+  all_rows
+  |> Enum.reject(fn row ->
+    col.(row, "Include my name on grant support webpage (Yes)") == "true"
   end)
+  |> Enum.filter(fn row ->
+    text = col.(row, "Statement supporting the goals of the grant")
+    text != "" and not is_nil(text) and
+      (col.(row, "Representing (Company)") == "true" or
+         col.(row, "Representing (Project)") == "true")
+  end)
+
+statements =
+  (Enum.map(opted_in_rows, &build_statement.(&1, col.(&1, "Your name"))) ++
+     Enum.map(anonymous_statement_rows, &build_statement.(&1, nil)))
   |> Enum.reject(fn s ->
     s["text"] == "" or is_nil(s["text"]) or
-      Enum.member?(dropped_statements, {s["person"], s["text"]})
+      Enum.member?(dropped_statements, {s["person"], s["text"]}) or
+      # Drop anonymous statements with no company or project to attribute to
+      (is_nil(s["person"]) and is_nil(s["company"]) and s["projects"] == [])
   end)
-  |> Enum.sort_by(&transliterate.(&1["person"]))
+  |> Enum.map(fn s ->
+    Map.put(s, "author", resolve_author.(s, companies))
+  end)
+  |> Enum.sort_by(fn s -> transliterate.(s["author"] || "") end)
 
 File.write!(Path.join(data_dir, "aegis_community_companies.yml"), Ymlr.document!(%{"companies" => companies}))
 File.write!(Path.join(data_dir, "aegis_community_projects.yml"), Ymlr.document!(%{"projects" => projects}))

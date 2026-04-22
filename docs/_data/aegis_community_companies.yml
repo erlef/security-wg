@@ -16,6 +16,10 @@ companies:
     name: Amplified
     size: '3'
     slug: amplified
+  - logo:
+    name: areal M GmbH
+    size: '1'
+    slug: areal-m-gmbh
   - logo: /assets/aegis/community-supporters/binary-noggin.png
     name: Binary Noggin
     size: '2'
@@ -40,10 +44,18 @@ companies:
     name: Community
     size: '100'
     slug: community
+  - logo: /assets/aegis/community-supporters/convivial-tech.svg
+    name: Convivial Tech
+    size: '1'
+    slug: convivial-tech
   - logo: /assets/aegis/community-supporters/data-ductus.png
     name: Data Ductus
     size: '300'
     slug: data-ductus
+  - logo: /assets/aegis/community-supporters/dayliteapp.svg
+    name: Daylite.app
+    size: '50'
+    slug: dayliteapp
   - logo: /assets/aegis/community-supporters/electricsql.png
     name: ElectricSQL
     size: '15'
@@ -72,6 +84,10 @@ companies:
     name: Kaltio Technologies Oy
     size: '15'
     slug: kaltio-technologies-oy
+  - logo: /assets/aegis/community-supporters/keila-gmbh.svg
+    name: Keila GmbH
+    size: '1'
+    slug: keila-gmbh
   - logo:
     name: Leapsight Technologies Limited
     size: '30'
@@ -104,6 +120,14 @@ companies:
     name: Oban Pro
     size: '2'
     slug: oban-pro
+  - logo: /assets/aegis/community-supporters/open-source-automation-development-lab-osadl-eg.svg
+    name: Open Source Automation Development Lab (OSADL) eG
+    size: '7'
+    slug: open-source-automation-development-lab-osadl-eg
+  - logo: /assets/aegis/community-supporters/orlando-robotics-foundation.svg
+    name: Orlando Robotics Foundation
+    size: '5'
+    slug: orlando-robotics-foundation
   - logo:
     name: Otolo Networks
     size: '2'
@@ -124,6 +148,10 @@ companies:
     name: Ratio PBC
     size: '6'
     slug: ratio-pbc
+  - logo:
+    name: Rossfell Ltd
+    size: '1'
+    slug: rossfell-ltd
   - logo: /assets/aegis/community-supporters/script-kitty-foundation.webp
     name: Script Kitty Foundation
     size: '1'
@@ -136,6 +164,10 @@ companies:
     name: Talim OÜ
     size: '1'
     slug: talim-ou
+  - logo: /assets/aegis/community-supporters/tatsu.svg
+    name: Tatsu
+    size: '1'
+    slug: tatsu
   - logo: /assets/aegis/community-supporters/tentamen-doo.svg
     name: Tentamen doo
     size: '1'

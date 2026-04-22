@@ -1,35 +1,52 @@
 ---
 statements:
-  - company: binary-noggin
+  - author: Amos King
+    company: binary-noggin
     person: Amos King
     projects: []
     text: 'Security is the oft missed but most important part of protecting data today. Software is in every aspect of our lives and holds our data. Keeping it safe and secure at every level is paramount. Ensuring our supply-chain is secure ensures that bad actors can’t exploit a critical aspect of software delivery. '
-  - company:
+  - author: Andew Dryga
+    company:
     person: Andew Dryga
     projects: []
     text: In the age where we have cyberwars, massive supply chain attacks, and LLMs that can break out of sandboxes, we also need to have consistent countermeasures to all of this.
-  - company:
+  - author: Andrew France
+    company:
     person: Andrew France
     projects: []
     text: As a software developer with experience across several languages, supply-chain attacks are one of the threats that concern me the most as they are where we currently have the fewest defences given the potential severity of the danger. Individual projects can prevent and ward off direct attacks but few things can compromise more projects faster than a malicious dependency. Unlike some other ecosystems where massive dependency trees are the norm, Elixir and Erlang are in an excellent position to introduce more trust in the build and packaging processes. The robustness of the BEAM platform already brings benefits for many types of workload. Being able to demonstrate an industry-leading enhanced security story would extend the range of applications for BEAM languages in multiple sectors such as government and infrastructure.
-  - company:
+  - author: areal M GmbH
+    company: areal-m-gmbh
+    person:
+    projects: []
+    text: |
+      We rely on RabbitMQ, built on Erlang, as a core component in systems used within critical infrastructure. In such environments, reliability and security are essential—any compromise in the software supply chain can directly impact operations.
+
+      Trusted builds, reproducibility, and verifiable dependencies are therefore fundamental requirements. Strengthening supply-chain security ensures that the systems we depend on remain resilient, auditable, and safe to operate over long lifecycles.
+
+      Supporting Ægis aligns with our need for high-assurance software foundations in critical infrastructure.
+  - author: Austin Lopez
+    company:
     person: Austin Lopez
     projects: []
     text: |-
       We are well-aware that vulnerabilities require constant vigilance and that the advent of LLMs has raised the stakes even higher on ensuring secure supply chains.
 
       I use Erlang/Elixir in my professional and hobby life extensively and rely on the security guarantees provided by the entire ecosystem.
-  - company:
+  - author: Austin Ziegler
+    company:
     person: Austin Ziegler
     projects: []
     text: I use trusted publishing with RubyGems and it makes things very easy for automated trusted publishing. I would want to ensure that the Ægis goals are to ensure that trusted build systems exist for more than just GitHub, as there are projects moving off GitHub as their project source.
-  - company: script-kitty-foundation
+  - author: Ayla Croft
+    company: script-kitty-foundation
     person: Ayla Croft
     projects:
       - https://github.com/HackTuah/HackTUI-Hermes-Jido
       - https://github.com/HackTuah/HackTui
     text: 'I work as CAO and work hands on with building and security engineering. In fact I build purple team tools in Elixir. This grant will massively help the entire eco-system and directly impacts my work and mission. '
-  - company:
+  - author: Bart Blast
+    company:
     person: Bart Blast
     projects:
       - https://github.com/bartblast/hologram
@@ -39,49 +56,67 @@ statements:
       Trusted builds and supply-chain integrity are foundational to the credibility of the entire BEAM ecosystem. As our community grows and attracts more production workloads, the ability to verify that packages have not been tampered with becomes essential. The Aegis initiative addresses a real gap, and its success would strengthen the trust that developers and organizations place in Erlang and Elixir tooling.
 
       I fully support this grant application and believe the investment will benefit the ecosystem for years to come.
-  - company:
+  - author: bash
+    company:
+    person:
+    projects:
+      - https://hex.pm/packages/bash
+      - https://hex.pm/packages/phantom_mcp
+      - https://hex.pm/packages/date_time_parser
+    text: Ensuring that projects and maintainers can meet emerging global regulations like the EU CRA and NIST SSDF through built-in tooling EEF Security WG, rather than expecting every team to solve this individually, is the right level of abstraction. Most teams — including mine — don't have dedicated security staff. Providing accessible libraries and tools around standards like cosign, SLSA, and SCITT means smaller teams can adopt best-in-class protections EEF Security WG without having to become security experts first.
+  - author: Ben de Haan
+    company:
     person: Ben de Haan
     projects: []
     text: We are a security company and have strategically chosen Elixir and Hex for our new initiatives and current websites. Most of the code we run, personally or professionally, isn’t code that we wrote ourselves. We care deeply that we make our own supply chain security as well.
-  - company:
+  - author: Benjamin Milde
+    company:
     person: Benjamin Milde
     projects: []
     text: The lastest changes in AI advancements around security made moving to tighter security best practices a much more inportant task, which the EEF has been stuarding well, but also needs to be able to continue to do.
-  - company:
+  - author: Benjamin Philip
+    company:
     person: Benjamin Philip
     projects: []
     text: |-
       Erlang and its ecosystem powers many systems of vital importance today, from Telecom and Internet Infrastructure, Banking Systems to personal communication platforms like Whatsapp and Discord.
 
       As the indivual maintainer of the arrow-erlang/serde_arrow project (a will-be dependency of OTel), my project and I make up one of the many targets for a potential supply-chain attack. The Aegis project informs and enables me to implement robust security practices, reducing risk and improving sustainability in Erlang's open source ecosystem.
-  - company:
+  - author: Bodo Tasche
+    company:
     person: Bodo Tasche
     projects: []
     text: In the current world of AI based attacks on supply chains, we need every help we get to protect our open source projects and our businesses. Every Euro invested into this will help european companies stay secure.
-  - company:
+  - author: Bram Verburg
+    company:
     person: Bram Verburg
     projects: []
     text: Supply chain attacks are on the rise, I consider them the top risk for any project that leverages FOSS due to the disastrous consequences they can have. The Erlang ecosystem is well positioned due to past work, but by no means immune to the threat. Further work is needed so users can confidently leverage the awesome technology that can be built with Erlang and related languages
-  - company:
+  - author: Brett Hazen
+    company:
     person: Brett Hazen
     projects: []
     text: Our company is heavily invested in Elixir and the entire BEAM ecosystem so any way we can further build and support it, it will ensure the continued success of our business.
-  - company: community
+  - author: Caique Mitsuoka
+    company: community
     person: Caique Mitsuoka
     projects: []
     text: |-
       Community.com builds and operates a large-scale messaging platform powered by Elixir.
       We believe a healthy, secure open-source ecosystem is foundational to the long-term viability of the Erlang/Elixir ecosystem.
       Community.com proudly supports the EEF's pursuit of this grant and commits to adopting the tooling and practices it will produce.
-  - company:
+  - author: Cees de Groot
+    company:
     person: Cees de Groot
     projects: []
     text: We - and others working with Elixir in Healthcare - really need all the trust we can get from upstream. Elixir is already an excellent choice for this rapidly growing field, and by showing that there's a hardened and secure ecosystem I think we can help it grow here.
-  - company:
+  - author: Charles Lanahan
+    company:
     person: Charles Lanahan
     projects: []
     text: Erlang and Elixir (and GLEAM and other BEAM languages) are cornerstones of telecom and the Internet and need this grant to continue their path of excellence in Internet security.
-  - company: bitcrowd
+  - author: Christoph Beck
+    company: bitcrowd
     person: Christoph Beck
     projects: []
     text: |-
@@ -92,106 +127,139 @@ statements:
       The ability to consume signed, provenance-verified OTP builds and generate accurate SBOMs is essential for our certification processes. 
 
       Without Ægis, we're building these assurances ad hoc; with it, the entire ecosystem benefits.
-  - company: amplified
+  - author: Christopher Grainger
+    company: amplified
     person: Christopher Grainger
     projects:
       - https://github.com/elixir-explorer/explorer
       - https://github.com/elixir-dux/dux
       - https://github.com/simdxml/simdxml-elixir
     text: Amplified is ISO27001 certified and would improve our security stance with these improvements. Supply chain security is particularly important for our customers.
-  - company:
+  - author: Connor Rigby
+    company:
     person: Connor Rigby
     projects: []
     text: my company sells a suite of network security products built on top of Erlang/Elixir ecosystem, advancements in the supply-chain security and trusted builds will help not only our company moral but our end product knowing it is backed by secure and trusted technology
-  - company:
+  - author: Convivial Tech
+    company: convivial-tech
+    person:
+    projects: []
+    text: Supply Chain security is paramount to a well running software language and tech stack. Without it, trust is lost and potential for big security leaks are a big issue.
+  - author: couchdb.apache.org
+    company:
+    person:
+    projects:
+      - https://couchdb.apache.org
+    text: Apache CouchDB is a database management software. Data safety and security are primary goals of the project. They can only be achieved with a reliable foundation and a supply chain we can trust.
+  - author: Daniel Kukuła
+    company:
     person: Daniel Kukuła
     projects: []
     text: As a maintainer of software others depend on, I know every release is a point of trust. Supply-chain attacks exploit that trust at scale. Ægis makes verifiable builds accessible to individual developers like me — hardening not just my project, but the broader ecosystem we all share.
-  - company:
+  - author: Daniel Kurz
+    company:
     person: Daniel Kurz
     projects: []
     text: I myself use the Erlang Ecosystem (in particular Gleam) heavily for personal and work related projects. Noticing how giant supply chain attacks have only been increasing, I would like to be reassured of my confidence in the people behind these technologies. With popular figures in the industry being attacked, it is also clear that even experts in the field can be susceptible to these attacks.
-  - company:
+  - author: Danielle Maywood
+    company:
     person: Danielle Maywood
     projects:
       - https://hex.pm/packages/glexer
     text: We're in an evolving software engineering landscape. Anthropic are claiming their upcoming Claude Mythos will be a revolution in its ability to find real exploits. Now, more than ever, we need to ensure our supply chains are secure.
-  - company:
+  - author: David Bernheisel
+    company:
     person: David Bernheisel
     projects: []
     text: |-
       I build and operate large-scale, distributed device testing infrastructure on the BEAM — systems where dozens of Elixir services, third-party Hex packages, and tooling dependencies form a long, often invisible chain of trust. The Ægis initiative addresses something I care about deeply: the reality that the security of what I ship is only as strong as the weakest link in that chain.
 
       Supply-chain attacks are not a theoretical edge cases. They are a demonstrated and growing threat to production software, and the BEAM ecosystem — precisely because it has thrived on a rich, collaborative open-source culture — needs the kind of formal, auditable security infrastructure that Ægis is building.
-  - company:
+  - author: David Fuenmayor
+    company:
     person: David Fuenmayor
     projects:
       - https://hex.pm/packages/isabelle_elixir
       - https://github.com/jcschuster/SHOT-25
     text: We are researchers in formal methods for AI and strongly support the goals of this grant. We are betting on the Erlang/Elixir ecosystem for developing formally verified algorithms for safe, trustworthy AI systems. Improving the ecosystem’s security and sustainability would make it an even stronger foundation for high-assurance software and AI.
-  - company: tv-labs
+  - author: David Lucia
+    company: tv-labs
     person: David Lucia
     projects: []
     text: |-
       TV Labs virtualizes access to thousands of devices, all managed through a control plane and orchestrator written in BEAM languages. As both a package consumer and publisher, supply chain security is not abstract for us. The reputation and reliability of our product depend directly on the integrity of every dependency we pull and every build we ship.
 
       The Ægis objectives around trusted builds, supply chain transparency, and continuous vulnerability management address real operational risks we face today. The grant's focus on secure publishing workflows and improved tooling for compliance will allow our team to meet the security expectations of our customers without building and maintaining that infrastructure ourselves. We are committed to adopting the practices and tooling that come out of this effort and see this grant as continued investment to ensure that our underlying infrastructure will provide a strong foundation for us to build and grow our product.
-  - company:
+  - author: Edgar Gomes de Araujo
+    company:
     person: Edgar Gomes de Araujo
     projects: []
     text: 'With the rapid advancement of AI-generated code, it’s becoming increasingly challenging for humans to stay fully informed and aware of all the details. Consequently, the risk of injection attacks and other attack vectors along the supply chain is on the rise. Investing in protection, verification, and validation of the protected supply chain is of utmost importance. '
-  - company:
+  - author: Edward Kelly
+    company:
     person: Edward Kelly
     projects: []
     text: Secure software supply chain research is vital for our business to be protected from cyber threats, especially in the age of AI
-  - company:
+  - author: 'Étienne Lévesque '
+    company:
     person: 'Étienne Lévesque '
     projects: []
     text: 'I deeply believe that the BEAM is the best platform to build scaleable and maintainable software systems. However, for any software ecosystem to thrive and deliver its full potential value it must have a strong security posture suitable for any level of security sensitivity. Supply-chain security is an increasingly prevalent vector of attack by bad actors. It is therefore imperative that the BEAM ecosystem has the strongest possible security in that regard. '
-  - company: erlang-solutions-ltd
+  - author: Francesco Cesarini
+    company: erlang-solutions-ltd
     person: Francesco Cesarini
     projects: []
     text: 'Supply-chain security and the Ægis initiative are vital because they protect the integrity of the BEAM ecosystem, ensuring that critical infrastructure remains resilient against malicious tampering or vulnerabilities. By implementing trusted builds and verifiable software origins, Erlang Solutions provides its customers with the confidence that their systems are as secure as they are stable. '
-  - company:
+  - author: Frank Eickhoff
+    company:
     person: Frank Eickhoff
     projects: []
     text: |-
       I fully support the EEF initiative for supply-chain security.
       Being a open source maintainer myself and working with open source on a daily basis, having the supply-chain security build into the tooling and package management flow itself, will be an outstanding feature of the ecosystem! I can't value this enough.
-  - company:
+  - author: Frank Hunleth
+    company:
     person: Frank Hunleth
     projects:
       - https://nerves-project.org/
     text: Nerves-based embedded systems are built on the BEAM and its open-source ecosystem. The BEAM's technical advantages are proven in mission-critical embedded deployments, and supply-chain trust and transparency as provided by Ægis are critical to the security of Nerves devices in an increasingly hostile environment.
-  - company:
+  - author: Frank Kumro
+    company:
     person: Frank Kumro
     projects: []
     text: 'supply-chain security issues hurt trust of the ecosystem and adoption. The BEAM would benefit greatly from having one of (if not the) best secured supply-chains available.  '
-  - company:
+  - author: Geoffrey Roguelon
+    company:
     person: Geoffrey Roguelon
     projects: []
     text: Elixir/Erlang is a valuable piece of engineering that I use daily. Reinforcing security can make the ecosystem even better!
-  - company:
+  - author: Geoffrey Smith
+    company:
     person: Geoffrey Smith
     projects: []
     text: The BEAM and languages that run on it support some of the most critical communication infrastructure in the world. Why let that ever be vulnerable to supply-chain attacks?
-  - company:
+  - author: George Guimarães
+    company:
     person: George Guimarães
     projects: []
     text: EEF is taking Supply Chain ecosystem seriously and takes a great deal of work as we've seen from other communities and the news. Supporting this work means our work building on top of Elixir/BEAM codebases much easier.
-  - company:
+  - author: Guilherme de Maio
+    company:
     person: Guilherme de Maio
     projects: []
     text: "Elixir and Erlang are at the forefront of designing AI Agent systems. The runtime model matches perfectly and I'm personally invested in the platform more than ever. As we've seen recently with AI being used to target and attack several supply chain (eg axios), focusing on supply-chain security and vulnerability handling is super important and I fully support the Ægis initiative."
-  - company:
+  - author: Herman verschooten
+    company:
     person: Herman verschooten
     projects: []
     text: The Erlang Ecosystem Foundation's supply chain security grant strengthens the very foundation that Elixir, Phoenix, and the broader BEAM ecosystem rely on — protecting package integrity, dependency provenance, and build pipelines that thousands of production apps depend on. Investing in this means fewer zero-day surprises from compromised Hex packages, better compliance with regulations like the EU Cyber Resilience Act, and a more trustworthy ecosystem for everyone building on BEAM.
-  - company:
+  - author: Holden Oullette
+    company:
     person: Holden Oullette
     projects: []
     text: Supply Chain focused attacks continue to become more frequent and the Erlang/Elixir ecosystem must be prepared and even ahead of bad actors in the face of AI-enhanced attack campaigns.
-  - company:
+  - author: Isaiah DeRose-Wilson
+    company:
     person: Isaiah DeRose-Wilson
     projects: []
     text: |-
@@ -202,69 +270,84 @@ statements:
       Trusted builds are especially critical. We need confidence that what we build, test, and ship is exactly what runs in production, with verifiable provenance. Without that, even signed firmware and secure elements only solve part of the problem.
 
       This is not just about preventing worst-case exploits. It is about making Elixir a viable long-term foundation for security-sensitive, production-grade systems.
-  - company: electricsql
+  - author: James Arthur
+    company: electricsql
     person: James Arthur
     projects: []
     text: It’s essential to our ability to develop software. We rely on open source supply chain security. LLMs are making it easier to attack. We need systemic solutions to counter them.
-  - company:
+  - author: James Harton
+    company:
     person: James Harton
     projects:
       - https://beambots.dev/
     text: Supply chain security is something that has me pretty worried - I want folks to feel safe to adopt Beam Bots in industrial robotics settings, and I think we need help to get there.
-  - company:
+  - author: Jamie Wright
+    company:
     person: Jamie Wright
     projects: []
     text: Elixir, which is built on the BEAM, is a one-person ecosystem, allowing small teams to develop really powerful and resilient applications.
-  - company:
+  - author: Jason Stiebs
+    company:
     person: Jason Stiebs
     projects: []
     text: 'Security and in particular supply chain attacks have never been harder to tackle and maintain. Any effort in support of this will have nothing but large scale impact and life improvements for the whole ecosystem. '
-  - company:
+  - author: Jean Klingler
+    company:
     person: Jean Klingler
     projects:
       - https://github.com/elixir-lang/elixir
     text: One of the main promises of the Elixir ecosystem is reliability, and security is a core tenant of it.
-  - company:
+  - author: Jen Stehlik
+    company:
     person: Jen Stehlik
     projects:
       - https://hex.pm/packages/totally
       - https://hex.pm/packages/typeid_gleam
       - https://hex.pm/packages/glemini
     text: The BEAM is a powerhouse for web development, with all the news of supply chain attacks on NPM/PIP it's very important to protect ourselves before it escalates.
-  - company:
+  - author: Jeremy Gallagher
+    company:
     person: Jeremy Gallagher
     projects: []
     text: "Without Elixir and it's ecosystem, I would not have been able to build most of the applications and tools that we have today. Not because it would be impossible in other technology stacks, but because the inherent capabilities within it have made for a deeply motivating and trusting stack to use. Doing anything to further support the resiliency, robustness and hardening of the ecosystem not only helps us, but helps drive further adoption, expertise and trust. "
-  - company: ratio-pbc
+  - author: Jesse Cooke
+    company: ratio-pbc
     person: Jesse Cooke
     projects: []
     text: We build for state health and human services organizations. The more we can trust in the Erlang/Elixir/BEAM ecosystem, the more we can build in these highly regulated sectors where security is paramount.
-  - company:
+  - author: João Henrique Ferreira de Freitas
+    company:
     person: João Henrique Ferreira de Freitas
     projects: []
     text: meta-erlang is a Yocto Project layer that brings BEAM ecosystem to yocto linux based images. The goals of the grant are very important because meta-erlang can continue to provide up-to-date Erlang, Elixir and Glean recipes with new and solid versions. For meta-erlang and yocto consumers this is very important because their system (based on BEAM) will continue safe and with regular updates.
-  - company:
+  - author: Joe Martinez
+    company:
     person: Joe Martinez
     projects: []
     text: I support the Erlang Ecosystem Foundation Ægis grant because the BEAM ecosystem has been foundational to how I build reliable systems, and as AI becomes part of everything we ship, the need for strong, verifiable security only grows. Ægis helps ensure the ecosystem is ready for that future, where intelligent systems and trusted infrastructure have to go hand in hand.
-  - company:
+  - author: Joël Koch
+    company:
     person: Joël Koch
     projects: []
     text: We need this so we reduce the risk we expose users of our projects and customers to.
-  - company:
+  - author: John Downey
+    company:
     person: John Downey
     projects: []
     text: Supply-chain security isn’t optional for the BEAM ecosystem. It’s table stakes. As a CISO and active contributor to the Gleam and Elixir ecosystems, the gaps like automated vulnerability scanning are clear and consequential. Work like establishing the EEF CNA, building provenance attestations, and creating tooling for SBOM generation directly addresses what organizations need to confidently adopt and maintain BEAM technologies in regulated environments. Investing in this work benefits every project and company building on the BEAM.
-  - company:
+  - author: John Kemp
+    company:
     person: John Kemp
     projects: []
     text: "It is really important to have proper funding for supply-chain security in order to ensure that our companies and our customers can trust our source code, and the ecosystem isn't solely reliant on enthusiastic volunteers. The Aegis initiative will help us get there. "
-  - company: nervescloud
+  - author: Josh Kalderimis
+    company: nervescloud
     person: Josh Kalderimis
     projects:
       - https://github.com/nerves-hub/nerves_hub_web
     text: NervesCloud provides a comprehensive platform for companies to manage their IoT device fleets, including the ability to deploy updated firmware to their customers. We rely on dozens of open-source libraries, and as such, the supply-chain security of these libraries, as well as trusted builds of the Elixir and Erlang languages, enables us to run our platform with the peace of mind that malicious parties have not built a backdoor into these devices running downstream.
-  - company: alembic
+  - author: Josh Price
+    company: alembic
     person: Josh Price
     projects:
       - https://github.com/team-alembic/ash_authentication
@@ -274,89 +357,109 @@ statements:
       At Alembic, we build production systems on Elixir, Ash Framework, and the BEAM every day. Our clients in healthcare, finance, and critical infrastructure trust us to make sound architectural decisions. The security of the ecosystem those decisions rest on is not something we take for granted. 
 
       That is why we are proud to publicly support the Erlang Ecosystem Foundation's Ægis Initiative.
-  - company:
+  - author: Julian Köpke
+    company:
     person: Julian Köpke
     projects: []
     text: As an independent and open-source developer, I heavily depend on the BEAM ecosystem to be secure, since reviewing all code I rely on is not feasible.
-  - company: tentamen-doo
+  - author: Karlo Smid
+    company: tentamen-doo
     person: Karlo Smid
     projects: []
     text: Security of hex is important for businesses of elixir development
-  - company:
+  - author: Keila GmbH
+    company: keila-gmbh
+    person:
+    projects:
+      - https://github.com/pentacent/keila/
+    text: As a company built on the BEAM library ecosystem, few things are more important to use than the security of the package infrastructure.
+  - author: Ken Ebling
+    company:
     person: Ken Ebling
     projects: []
     text: |-
       Supply-chain security and trusted builds are critical to the Erlang/Elixir ecosystem because of its core promise: highly reliable, fault-tolerant systems running in production environments where failure is costly. The community depends heavily on shared packages distributed through Hex, and even a single compromised dependency can undermine the integrity of entire systems. Strengthening verification, provenance, and reproducibility ensures that what developers build and deploy is exactly what they intend, free from tampering or hidden vulnerabilities.
 
       Ægis objectives, such as signed packages, reproducible builds, and stronger trust guarantees  help preserve the ecosystem's reputation for resilience and safety. They also enable organizations in regulated or high-stakes domains (finance, healthcare, telecom) to adopt Erlang/Elixir with greater confidence. Ultimately, investing in supply-chain security is not just about preventing attacks; it reinforces the community's foundational values of reliability, transparency, and trust.
-  - company:
+  - author: Kenji Rikitake
+    company:
     person: Kenji Rikitake
     projects: []
     text: Erlang and BEAM languages, including Elixir and Gleam, rely on the assumption that all open-source libraries are safe and trustworthy. Actively removing threats against the supply chain of public Erlang code is essential to keep the Erlang and BEAM language ecosystems safe and sound.
-  - company: addigence
+  - author: Kenton Kilmer
+    company: addigence
     person: Kenton Kilmer
     projects: []
     text: |-
       Supply-chain security and trusted builds matter because our users are placing real trust in us: trust with their data, their assets, and their businesses.
 
       If the foundation isn’t secure, nothing built on top of it is reliable. Strengthening the integrity of the software supply chain isn’t just a technical priority. It’s core to maintaining trust, reducing systemic risk, and ensuring the ecosystem can scale responsibly over time.
-  - company: code-change
+  - author: Kero van Gelder
+    company: code-change
     person: Kero van Gelder
     projects: []
     text: security in the supply chain enhances reliability, safety and trustworthiness of software.As I am using Gleam, this is important to me in the Gleam / beam / erlang ecosystem, where hex.pm is the designated distribution channel for packages.
-  - company:
+  - author: Koushik Dasika
+    company:
     person: Koushik Dasika
     projects: []
     text: Supply chain attacks are daily in the NodeJS and Python ecosystems. Elixir and Erlang ecosystems have a much better chance of solving the problem because our dependencies  tend to be fewer. Its one more reason as part of the story of explaining why BEAM to leaderships.
-  - company:
+  - author: Louis Pilfold
+    company:
     person: Louis Pilfold
     projects: []
     text: As a BEAM user I think the work the EEF is doing is critical. Thank you all
-  - company:
+  - author: Louis Pilfold
+    company:
     person: Louis Pilfold
     projects:
       - https://gleam.run/
     text: "The EEF's security work has been invaluable for the Gleam programming language and its ecosystem. From Gleam's point of view it is vital that this work stream continues."
-  - company:
+  - author: Luke Bakken
+    company:
     person: Luke Bakken
     projects:
       - https://github.com/rabbitmq/rabbitmq-server
       - https://github.com/Kyorai/cuttlefish
     text: This project would be a major improvement to the Erlang ecosystem, and I support it.
-  - company:
+  - author: Luke Jernejcic
+    company:
     person: Luke Jernejcic
     projects: []
     text: 'Security is the second biggest reason we get push back in our organization when trying to do new projects in Elixir. By hardening our supply chain, it helps us to have a more secure project with evidence we can provide to stakeholders. '
-  - company:
+  - author: Maggie Tate
+    company:
     person: Maggie Tate
     projects: []
     text: 'The ecosystem security is essential to the community. We are grateful to the Erlang Ecosystem Foundation for coordinating this incredible effort and benefit to the community. '
-  - company:
+  - author: Mark Ericksen
+    company:
     person: Mark Ericksen
     projects: []
     text: The Thinking Elixir Podcast proudly supports the EEF’s pursuit of this grant. A healthy, secure package ecosystem is foundational to everything we build in Elixir. The Ægis project represents exactly the kind of long-term, community-wide investment that makes our ecosystem more trustworthy and sustainable for everyone, ranging from individual developers to enterprise teams.
-  - company: lightstack
+  - author: Mark Sargent
+    company: lightstack
     person: Mark Sargent
     projects: []
     text: 'Secure ecosystems are foundational to creating and sustaining the maximum value at the lowest cost. Investment in secure systems tooling is an incredible force multiplier. This is a virtuous circle not only for our project but it in turn encourages us to give back into the erlang community to lift others. '
-  - company:
+  - author: Martin Sumner
+    company:
     person: Martin Sumner
     projects:
       - https://github.com/OpenRiak
     text: The open-source database software we provide is deployed into environments that are in some cases regarded as critical national infrastructure for major governments, and in other cases are a critical dependancy for large enterprises.  Supply-chain security in the Erlang ecosystem is of significant importance to our project and in-turn our users.
-  - company:
+  - author: Mathias Peter
+    company:
     person: Mathias Peter
     projects: []
     text: As we are running elixir software for big corporate companies this would help having better proofed security of the runtime
-  - company:
-    person: 'Matthew '
-    projects: []
-    text: Having more support provides overall greater opportunities to learn and develop solutions that otherwise would be obscured or impossible.
-  - company:
+  - author: Matthew Manley
+    company:
     person: Matthew Manley
     projects: []
     text: Supply-chain security and trusted builds matter because modern software depends on many external components, making it vulnerable to hidden compromises. Ensuring build integrity and verifying dependencies protects users, maintains trust, and reduces systemic risk. For us, it’s essential to deliver reliable, tamper-free software and contribute to a safer overall ecosystem
-  - company:
+  - author: Mayel de Borniol
+    company:
     person: Mayel de Borniol
     projects:
       - https://bonfirenetworks.org
@@ -373,79 +476,107 @@ statements:
       Bonfire is committed to adopting the practices and tooling that emerge from this work, and to participating in the broader community effort to refine and maintain them. We believe that long-term success will come from widespread adoption, shared responsibility, and continued collaboration across the ecosystem.
 
       Strengthening the supply chain is not a one-time effort but an ongoing commitment. We view Ægis as a crucial step toward ensuring the long-term health, security, and trustworthiness of the BEAM ecosystem.
-  - company:
+  - author: Micah Cooper
+    company:
     person: Micah Cooper
     projects: []
     text: A seamless secure supply chain is a required foundation for our small and powerful elixir/beam community
-  - company:
+  - author: Michał Muskała
+    company:
     person: Michał Muskała
     projects: []
     text: Supply chain attacks are one of the major concerns for large enterprises. Improving Erlang's ecosystem robustness in the face of increasing risk is a critical initiative that will allow projects and companies leveraging Erlang to better succeed and improve their competitiveness by limiting the risk of attacks.
-  - company:
+  - author: 'Michael Coles '
+    company:
     person: 'Michael Coles '
     projects: []
     text: Supply-chain attacks are more frequent and in many cases effective. Any mitigation against this is important to the community and the long term success of the ecosystem, open source and in industry.
-  - company: carver-automation
+  - author: Michael Freeman
+    company: carver-automation
     person: Michael Freeman
     projects:
       - https://github.com/carverauto/serviceradar
       - https://code.carverauto.dev/carverauto/serviceradar
     text: Supply chain is extremely important to us, especially in light of the recent attacks on popular projects that have sent ripples throughout the opensource and cybersecurity world.
-  - company: paraxialio
+  - author: Michael Lubas
+    company: paraxialio
     person: Michael Lubas
     projects: []
     text: |+
       Michael Lubas is the founder of Paraxial.io, a member of the EEF Security Working Group, and a leading expert on the security of web applications. He is frequently consulted by companies - from early-stage startups to large household names - who are evaluating the security posture of the Elixir ecosystem. This grant will provide every organization using Erlang and Elixir - businesses, governments, universities, and hospitals - with a secure foundation to perform their work and achieve vital goals. When a payment clears to put food on a family's table, when a hospital's software runs without failure, when friends connect across the world, Erlang and Elixir make that possible. This grant will ensure it happens securely.
 
-  - company: the-state-news
+  - author: Mike Joseph
+    company: the-state-news
     person: Mike Joseph
     projects: []
     text: Having a secure supply chain is easily the post important aspect of professional software development. Having an unreliable upstream provider will cut a growing software ecosystem off at the knees.
-  - company:
+  - author: Mike Schell
+    company:
     person: Mike Schell
     projects: []
     text: We support this because supply-chain security and trusted builds are important not only for our project, but for the health of the ecosystem as a whole. The Rational Prepper is built around trust, explainability, and dependable operation, and those goals are reinforced by stronger ecosystem-level assurance. Funding Ægis-aligned work would help improve the reliability and trustworthiness of the tools and infrastructure that projects like ours depend on.
-  - company:
+  - author: Mohamed Hegazy
+    company:
     person: Mohamed Hegazy
     projects: []
     text: Supply-chain attacks are becoming more and more common. We all rely on open-source and protecting the Erlang and Beam ecosystems from these types of attacks is more important now than ever before.
-  - company:
+  - author: Mylan Connolly
+    company:
     person: Mylan Connolly
     projects: []
     text: The Ægis project will go a long way to improve the Elixir and Erlang ecosystem in a way that will make it more appealing to businesses in industries where compliance and security are big concerns. Widespread adoption of the BEAM ecosystem will help us all so I think this is a great idea!
-  - company:
+  - author: Nathan Hessler
+    company:
     person: Nathan Hessler
     projects: []
     text: we've seen a number of security hits and hacks to supply chains for different tech stacks across the software industry. Making sure our code is secure and therefore our supply chain for shared libraries is secure is growing area of concern and a should be a growing area of focus as well.
-  - company:
+  - author: Nathan Long
+    company:
     person: Nathan Long
     projects: []
     text: Our company uses Elixir in both server and hardware components, which together monitor and control HVAC, lighting, and more. This is important for safety, comfort, and cost control. Security is very important to us and our customers.
-  - company:
+  - author: Nelson Jimenez
+    company:
     person: Nelson Jimenez
     projects: []
     text: Supply-chain security is important for the whole ecosystem to avoid malware attacks. It makes the whole ecosystem more trusted, it helps everyone.
-  - company:
+  - author: Nelson Vides
+    company:
     person: Nelson Vides
     projects: []
     text: I'm the main maintainer of an authoritative DNS nameserver written in Erlang, and a hijacked dependency might mean really really nasty world-wide attacks if DNS is hijacked.
-  - company: ti-tokyo
+  - author: Nicholas Adams
+    company: ti-tokyo
     person: Nicholas Adams
     projects: []
     text: Erlang is used in a large number of places, more than many companies will willingly admit, OpenRiak being just one of them. That said, without adequate security, these systems that have been quietly running the modern world in the background are potentially vulnerable as new bugs and security risks become known. By having this grant to stay ahead of the curve, we would ensure that such systems continue to serve their purposes successfully.
-  - company:
+  - author: Niklas Ögren
+    company:
     person: Niklas Ögren
     projects: []
     text: We work every day with uplifting, securing our build environment, and hunting bugs. We want our 3pp's to have as high modern level security as possible.
-  - company:
+  - author: olivier belhomme
+    company:
     person: olivier belhomme
     projects: []
     text: My hobbyist elixir projects are self hosted in my house. Their security (including dependencies safety) is critical to me as their compromission would make my whole homelab vulnerable.
-  - company:
+  - author: Olivier Boudeville
+    company:
     person: Olivier Boudeville
     projects: []
     text: Not wanting attacks to be propagated through dependencies.
-  - company:
+  - author: Open Source Automation Development Lab (OSADL) eG
+    company: open-source-automation-development-lab-osadl-eg
+    person:
+    projects: []
+    text: OSADL provides support on all aspects of using Open Source software in a product and represents 100+ industry members. Supply-chain security is a crucial aspect for our members since it ensures long term risk control, regulatory compliance and customer trust.
+  - author: Orlando Robotics Foundation
+    company: orlando-robotics-foundation
+    person:
+    projects: []
+    text: Our systems handle personal and private information of the volunteers, educators, and youth we serve as a nonprofit corporation. Supply-chain risks are a threat to and distraction from the important work we do, and we rely on the Erlang and Elixir community to ensure that dependency updates will not compromise our systems. EEF's commitment to supply-chain security will improve the security of everyone we serve.
+  - author: Paulo Valente
+    company:
     person: Paulo Valente
     projects:
       - https://hex.pm/packages/nx
@@ -454,14 +585,16 @@ statements:
       Nx is widely used by the Elixir community and given the nature of its NIF usage, could become a liability for the VM integrity if compromised.
 
       Likewise, gRPC is also widely used by the community and directly affects language and service interoperability.
-  - company: ionio-systems
+  - author: Per Andersson
+    company: ionio-systems
     person: Per Andersson
     projects: []
     text: |-
       The supply chain attack vector is important because it is increasing in intensity. It is important because it affects the entire stack and can have wide consequences for a lot of deployed software and products.
 
       Coming from the free software community, this has always been important for licenses; but a similar analysis is now important for security and traceability reasons.
-  - company: ti-tokyo
+  - author: Peter Clark
+    company: ti-tokyo
     person: Peter Clark
     projects:
       - https://github.com/OpenRiak
@@ -471,84 +604,112 @@ statements:
       Ægis’s focus on improving tooling, standardising secure practices, and strengthening ecosystem governance directly supports these needs. By raising the baseline across the community, it enables organisations to confidently deploy and rely on open source in critical environments.
 
       We strongly support the goals of Ægis and its emphasis on broad, sustained community participation as the foundation for long-term ecosystem security and trust.
-  - company: eyg-labs
+  - author: Peter Saxton
+    company: eyg-labs
     person: Peter Saxton
     projects:
       - https://github.com/CrowdHailer/eyg-lang
       - https://github.com/crowdhailer/aide
       - https://github.com/crowdhailer/ace
     text: All of the listed projects are depended on by others. I would like to improve security for end users
-  - company:
+  - author: Petr Chalupa
+    company:
     person: Petr Chalupa
     projects: []
     text: My projects depend on the supply chain to be secure.
-  - company:
+  - author: Raimo Niskanen
+    company:
     person: Raimo Niskanen
     projects: []
     text: Being able to trust packages in repositories is essential for all users in the Erlang/OTP and .BEAM community.
-  - company:
+  - author: Raúl R. Pearson
+    company:
     person: Raúl R. Pearson
     projects: []
     text: Supply-chain risk keeps me awake at night. Attacks are only going to become more common and I'm so happy that Ægis is a driving force towards higher security standards for the whole ecosystem.
-  - company:
+  - author: Rebecca Reusch
+    company:
     person: Rebecca Reusch
     projects: []
     text: As one of the maintainers of the biggest web frameworks for Gleam, I am directly affected by the general security of the ecosystem. In the past year the EEF has helped us immensely identifying security issues in Gleams foundational packages. Thank you!
-  - company:
+  - author: Renata
+    company:
     person: Renata
     projects: []
     text: I have 2 production web pages based on the erlang stack. That should be enough to demonstrate that I care for the objectives of the foundation.
-  - company: otolo-networks
+  - author: Rick Payne
+    company: otolo-networks
     person: Rick Payne
     projects: []
     text: Its clear that supply chain attacks are huge issue in ongoing project security and work done by the EEF to improve that situation will be hugely beneficial to the Erlang community.
-  - company:
+  - author: Rickard Green
+    company:
     person: Rickard Green
     projects:
       - https://github.com/erlang/otp
     text: For the Erlang/OTP project, supply‑chain security and trusted builds are essential. Erlang/OTP is widely used as long‑lived, mission‑critical infrastructure, where trust in the provenance, integrity, and reproducibility of both core and third‑party components is paramount.
-  - company:
+  - author: Robert Carbone
+    company:
     person: Robert Carbone
     projects: []
     text: "As a long time Erlang programmer and founding member of the OpenRiak Working Group, I strongly support the goals of the Ægis Initiative. Supply-chain security is critical for ensuring the integrity & trustworthiness of the BEAM ecosystem, especially as we(my personal company, colleagues, and the OpenRiak initiative) rely on the ability to COMMUNICATED stability & security to stakeholders in order to gain technological adoption. Trusted builds, verifiable package provenance, and secure publishing methods are foundational to protecting both developers and end-users in an increasingly complex and regulated environment. Let's remember, Erlang (and Elixir) are used as the backbone of GLOBAL information exchange— there are few better places to invest in than this cause. From what I understand, the EEF is leading the way in this field and I am not only excited and eager to give the Aegis Project my support, but urge you to do the same. The objectives of the EEF/Ægis Project is in alignment with the long-term success and resilience of the Erlang community and with the many other projects I support on a daily basis. I see this grant as an opportunity to advance these goals and strengthen our foundation. "
-  - company: mythic-insight
+  - author: Robert Prehn
+    company: mythic-insight
     person: Robert Prehn
     projects: []
     text: As a consulting firm working in safety- and security-critical fields like Healthtech and Fintech, supply-chain security and trusted builds are important tools for keeping our users and their data safe. As Erlang and Elixir are more broadly adopted in these fields, we need to continue strengthening our security assurances.
-  - company: express-process-development-llc
+  - author: Robert Stewart
+    company: express-process-development-llc
     person: Robert Stewart
     projects: []
     text: For the past decade, anyone who has worked with web server logs is aware that security attacks are constant. Likewise, anyone who has followed security news is aware that supply chain attacks are only increasing. Completion of the Aegis initiative, specifically supply chain bill of materials, will allow us to evaluate EEF based software for more sensitive projects. Completion will also improve the security mindset and practices of the communities built around the EEF. Lastly it will set an example for other open source technologies, improving the security expectations for open source software, which will encourage other major communities to follow their example.
-  - company: praia-labs
+  - author: Rodolfo Carvalho
+    company: praia-labs
     person: Rodolfo Carvalho
     projects: []
     text: |-
       We rely on and contribute to several projects in the Erlang/Elixir ecosystem, including but not limited to Phoenix and LiveView. We understand the importance of a healthy, sustainable, and secure ecosystem to support our BEAM community and the businesses built on its ecosystem.
 
       Ensuring Hex and other critical infrastructure remain a safe place to publish and consume code is a must, has always been, and will continue to be as we see increased pressure from malicious actors on other software ecosystems.
-  - company: gassagosso
+  - author: Rodrigue VILLETARD
+    company: gassagosso
     person: Rodrigue VILLETARD
     projects:
       - https://photoasso.fr
     text: When working on client projects or one internal to our company, it’s crucial to have the maximum security insurances. It’s also a mark of credibility with our clients and users.
-  - company: data-ductus
+  - author: Rossfell Ltd
+    company: rossfell-ltd
+    person:
+    projects: []
+    text: Looking forward to the results of the Ægis project as it will improve the security of the Erlang ecosystem hugely...
+  - author: Scott Barvick
+    company: data-ductus
     person: Scott Barvick
     projects: []
     text: Erlang and OTP are the basis for our DMAP program, which is a core element of many of the top networking products in the world.
-  - company:
+  - author: Simon Thompson
+    company:
     person: Simon Thompson
     projects:
       - https://epsrc-stardust.github.io
     text: "Ensuring security of computer systems requires action at many different points and in different ways. The UK-government sponsored STARDUST project aims to address potential failures in Erlang and other distributed systems through advanced language design; this complements the work of Ægis in securing the wider ecosystem, and others' work on e.g. specifying the language itself, and building secure compilers. None of the projects can succeed alone: only through concerted collaboration can we move closer to whole-system security and reliability."
-  - company:
+  - author: Stefan Fochler
+    company:
     person: Stefan Fochler
     projects: []
     text: Comply chain security is fundamental as the company I work for deals in regulated industries and is also ISO 27001 certified which implies that we implement controls for supply chain security. The EEF‘s efforts help us with that.
-  - company:
+  - author: Steve Grossi
+    company:
     person: Steve Grossi
     projects: []
     text: As recent headlines have shown, supply-chain security is of foundational importance to software ecosystems and communities. As someone who uses the BEAM for both personal and professional projects, I fully support investments in this area for the BEAM ecosystem.
-  - company:
+  - author: Tatsu
+    company: tatsu
+    person:
+    projects: []
+    text: Elixir, which is built on the BEAM, is a one-person ecosystem, allowing small teams to develop really powerful and resilient applications.
+  - author: thanos vassilakis
+    company:
     person: thanos vassilakis
     projects: []
     text: |-
@@ -559,7 +720,8 @@ statements:
       This grant directly addresses my greatest operational risk: the fragility of trust in open-source toolchains. As a maintainer of 12 packages, I spend significant effort auditing dependencies and mitigating supply-chain threats—effort that could be redirected toward innovation if Ægis’ tooling (e.g., reproducible builds, SBOMs, and hardened publishing) were natively supported by Hex. Adopting these standards isn’t optional; it’s essential for the sustainability of my projects and the ecosystem I depend on.
 
       I fully commit to adopting Ægis’ forthcoming practices and tooling, and I will actively contribute to their refinement. This grant isn’t just about security—it’s about enabling open-source maintainers like me to build with confidence, so we can focus on advancing Elixir’s potential rather than defending against preventable threats. The future of our ecosystem depends on it.
-  - company:
+  - author: thanos vassilakis
+    company:
     person: thanos vassilakis
     projects:
       - https://hex.pm/packages/ex_utcp
@@ -574,12 +736,14 @@ statements:
       The Ægis grant directly addresses my highest-priority challenge: ensuring ex_utcp’s supply chain is auditable, immutable, and resistant to sophisticated attacks. With this funding, the EEF can harden Hex against threats that would otherwise leave projects like ex_utcp — and the tools that rely on it — catastrophically vulnerable. I will immediately adopt all Ægis tooling (e.g., signed builds, dependency transparency) and contribute to its refinement to protect this critical infrastructure.
 
       For the ecosystem to thrive, we must treat protocols like UTCP as security infrastructure, not just code. This grant is the shield that allows maintainers like me to focus on innovation — not firefighting supply-chain breaches.
-  - company: logeek-sarl
+  - author: Thibaut Barrère
+    company: logeek-sarl
     person: Thibaut Barrère
     projects:
       - https://github.com/etalab/transport-site
     text: As an early adopter of Elixir, independent consultant, and maintainer of both healthcare & governmental Elixir apps in France, in a day and age in which security issues happen everyday, I very much endorse any effort able to ensure using Elixir in critical projects remains safer and safer.
-  - company:
+  - author: Tobias Pfeiffer
+    company:
     person: Tobias Pfeiffer
     projects:
       - https://github.com/bencheeorg/benchee
@@ -591,27 +755,32 @@ statements:
       As the maintainer of simplecov (Ruby) I had also already implemented trusted publishing for instance.
 
       This is also important from a company & adoption POV as security and supply chain audits are common once a certain threshold is reached. Being able to show great tools and standards in the community there is essential for the long-term success of the BEAM eco-system.
-  - company:
+  - author: Tomas Metz
+    company:
     person: Tomas Metz
     projects:
       - https://krabice.jcicr.cz
     text: High productivity, stability, trustable dependencies (supply chain), Elixir/Phoenix/LiveView stack
-  - company:
+  - author: Victor Björklund
+    company:
     person: Victor Björklund
     projects: []
     text: 'This is one of the biggest security risks at the moment and this project is key to safeguarding our systems against supply chain attacks. '
-  - company:
+  - author: Wade Mealing
+    company:
     person: Wade Mealing
     projects: []
     text: I'm continually concerned that my automation may accidentally drag in a dependency that ends up owning the entire infrastructure, due to how important erlang is.
-  - company:
+  - author: Will Rogers
+    company:
     person: Will Rogers
     projects: []
     text: |-
       You only need to read the news to understand how important supply chain integrity is. 
 
       The BEAM often finds itself in critical places such as telecommunications and energy. The important of this work is, to me, unquestionable.
-  - company:
+  - author: Zachary Daniel
+    company:
     person: Zachary Daniel
     projects:
       - https://hex.pm/packages/ash

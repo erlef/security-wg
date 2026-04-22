@@ -8,6 +8,10 @@ people:
     name: Adam Lindberg
     projects: []
   - companies:
+      - dayliteapp
+    name: AJ
+    projects: []
+  - companies:
       - leapsight-technologies-limited
     name: Alejandro Ramallo
     projects: []
@@ -415,9 +419,6 @@ people:
       - https://github.com/OpenRiak
   - companies: []
     name: Mathias Peter
-    projects: []
-  - companies: []
-    name: 'Matthew '
     projects: []
   - companies: []
     name: Matthew Manley

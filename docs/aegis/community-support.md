@@ -185,28 +185,30 @@ challenge.
   {% for statement in site.data.aegis_community_statements.statements %}
     <li>
       <div class="attribution">
-        {{ statement.person }}
-        {% assign has_affiliation = false %}
-        {% if statement.company %}
-          {% assign company = site.data.aegis_community_companies.companies | where: "slug", statement.company | first %}
-          {% if company %}
-            <span class="affiliation">— {{ company.name }}</span>
-            {% assign has_affiliation = true %}
+        {{ statement.author }}
+        {% if statement.person %}
+          {% assign has_affiliation = false %}
+          {% if statement.company %}
+            {% assign company = site.data.aegis_community_companies.companies | where: "slug", statement.company | first %}
+            {% if company %}
+              <span class="affiliation">— {{ company.name }}</span>
+              {% assign has_affiliation = true %}
+            {% endif %}
           {% endif %}
+          {% for url in statement.projects %}
+            {% assign project = site.data.aegis_community_projects.projects | where: "url", url | first %}
+            {% if project %}
+              <span class="affiliation">—
+                {% if project.type == "hex" %}<a href="{{ project.url }}">{{ project.name }}</a>
+                {% elsif project.type == "github" %}<a href="{{ project.url }}">{{ project.repo }}</a>
+                {% else %}<a href="{{ project.url }}">{{ project.label }}</a>
+                {% endif %}
+              </span>
+              {% assign has_affiliation = true %}
+            {% endif %}
+          {% endfor %}
+          {% unless has_affiliation %}<span class="affiliation">— Personal</span>{% endunless %}
         {% endif %}
-        {% for url in statement.projects %}
-          {% assign project = site.data.aegis_community_projects.projects | where: "url", url | first %}
-          {% if project %}
-            <span class="affiliation">—
-              {% if project.type == "hex" %}<a href="{{ project.url }}">{{ project.name }}</a>
-              {% elsif project.type == "github" %}<a href="{{ project.url }}">{{ project.repo }}</a>
-              {% else %}<a href="{{ project.url }}">{{ project.label }}</a>
-              {% endif %}
-            </span>
-            {% assign has_affiliation = true %}
-          {% endif %}
-        {% endfor %}
-        {% unless has_affiliation %}<span class="affiliation">— Personal</span>{% endunless %}
       </div>
       <blockquote>{{ statement.text }}</blockquote>
     </li>
