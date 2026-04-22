@@ -156,6 +156,9 @@ Support can be provided through:
   </a>
 </div>
 
+The Ægis Initiative also enjoys broad community support from companies, projects,
+and individuals across the BEAM ecosystem. See the full list of
+[community supporters](community-support).
 
 ## Implementation
 

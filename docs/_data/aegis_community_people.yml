@@ -1,0 +1,701 @@
+---
+people:
+  - companies:
+      - new-generation
+    name: Adam Behrens
+    projects: []
+  - companies: []
+    name: Adam Lindberg
+    projects: []
+  - companies:
+      - leapsight-technologies-limited
+    name: Alejandro Ramallo
+    projects: []
+  - companies: []
+    name: Alexander Quine
+    projects:
+      - https://github.com/alxndr/plug_prayer_flag
+  - companies:
+      - abensoft-ltda
+    name: Álvaro Gianni Pagliari
+    projects: []
+  - companies:
+      - binary-noggin
+    name: Amos King
+    projects: []
+  - companies: []
+    name: Anael Berrouet
+    projects: []
+  - companies: []
+    name: Andew Dryga
+    projects: []
+  - companies: []
+    name: Andrew France
+    projects: []
+  - companies: []
+    name: Andrew Selder
+    projects: []
+  - companies: []
+    name: Annette Bieniusa
+    projects: []
+  - companies: []
+    name: Argir Popov
+    projects: []
+  - companies: []
+    name: Austin Lopez
+    projects: []
+  - companies: []
+    name: Austin Ziegler
+    projects: []
+  - companies:
+      - script-kitty-foundation
+    name: Ayla Croft
+    projects:
+      - https://github.com/HackTuah/HackTUI-Hermes-Jido
+      - https://github.com/HackTuah/HackTui
+  - companies: []
+    name: Barbara Chassoul
+    projects: []
+  - companies: []
+    name: Bart Blast
+    projects:
+      - https://github.com/bartblast/hologram
+  - companies: []
+    name: Ben de Haan
+    projects: []
+  - companies:
+      - cargosense
+    name: Ben Wilson
+    projects:
+      - https://hex.pm/packages/absinthe
+  - companies: []
+    name: Benjamin Milde
+    projects: []
+  - companies: []
+    name: Benjamin Philip
+    projects: []
+  - companies:
+      - cargosense
+    name: Billy Lanchantin
+    projects: []
+  - companies: []
+    name: Bodo Tasche
+    projects: []
+  - companies: []
+    name: Bram Verburg
+    projects: []
+  - companies: []
+    name: Brett Hazen
+    projects: []
+  - companies: []
+    name: Brian Meeker
+    projects: []
+  - companies:
+      - community
+    name: Caique Mitsuoka
+    projects: []
+  - companies: []
+    name: Caleb Currie
+    projects: []
+  - companies: []
+    name: Cameron Cook
+    projects: []
+  - companies: []
+    name: Cees de Groot
+    projects: []
+  - companies: []
+    name: Charles Lanahan
+    projects: []
+  - companies:
+      - bitcrowd
+    name: Christoph Beck
+    projects: []
+  - companies:
+      - amplified
+    name: Christopher Grainger
+    projects:
+      - https://github.com/elixir-explorer/explorer
+      - https://github.com/elixir-dux/dux
+      - https://github.com/simdxml/simdxml-elixir
+  - companies: []
+    name: Connor Rigby
+    projects: []
+  - companies: []
+    name: Dan
+    projects:
+      - https://www.wings3d.com
+  - companies: []
+    name: Daniel Kukuła
+    projects: []
+  - companies: []
+    name: Daniel Kurz
+    projects: []
+  - companies: []
+    name: Danielle Maywood
+    projects:
+      - https://hex.pm/packages/glexer
+  - companies: []
+    name: David Bernheisel
+    projects: []
+  - companies: []
+    name: David Fuenmayor
+    projects:
+      - https://hex.pm/packages/isabelle_elixir
+      - https://github.com/jcschuster/SHOT-25
+  - companies:
+      - tv-labs
+    name: David Lucia
+    projects: []
+  - companies: []
+    name: David Matz
+    projects: []
+  - companies: []
+    name: Duncan Paul Attard
+    projects: []
+  - companies: []
+    name: Edgar Gomes de Araujo
+    projects: []
+  - companies: []
+    name: Edward Kelly
+    projects: []
+  - companies: []
+    name: Eric J. Christeson
+    projects: []
+  - companies: []
+    name: 'Étienne Lévesque '
+    projects: []
+  - companies: []
+    name: Filip Hoffman
+    projects:
+      - https://hex.pm/packages/operating_system
+      - https://hex.pm/packages/grom
+      - https://hex.pm/packages/status_code
+  - companies: []
+    name: Flávio Escobar
+    projects: []
+  - companies:
+      - erlang-solutions-ltd
+    name: Francesco Cesarini
+    projects: []
+  - companies: []
+    name: Frank Eickhoff
+    projects: []
+  - companies: []
+    name: Frank Hunleth
+    projects:
+      - https://nerves-project.org/
+  - companies: []
+    name: Frank Kumro
+    projects: []
+  - companies: []
+    name: Fredrik Teschke
+    projects: []
+  - companies: []
+    name: Geoffrey Roguelon
+    projects: []
+  - companies: []
+    name: Geoffrey Smith
+    projects: []
+  - companies: []
+    name: George Guimarães
+    projects: []
+  - companies: []
+    name: Gerrit Riessen
+    projects:
+      - https://github.com/gorenje/erlang-red
+  - companies: []
+    name: Giacomo Cavalieri
+    projects: []
+  - companies: []
+    name: Greg Mefford
+    projects: []
+  - companies: []
+    name: Greg Rychlewski
+    projects:
+      - 'https://github.com/elixir-ecto/ecto '
+  - companies: []
+    name: Guilherme de Maio
+    projects: []
+  - companies:
+      - protolux-electronics
+    name: Gus Workman
+    projects: []
+  - companies: []
+    name: Hannes Nevalainen
+    projects: []
+  - companies: []
+    name: Henrique Berlesi
+    projects: []
+  - companies: []
+    name: Herman verschooten
+    projects: []
+  - companies: []
+    name: Holden Oullette
+    projects: []
+  - companies: []
+    name: Hugo Baraúna
+    projects: []
+  - companies:
+      - talim-ou
+    name: Igor de Alcantara Barroso
+    projects: []
+  - companies: []
+    name: Isaac Harris-Holt
+    projects: []
+  - companies: []
+    name: Isaiah DeRose-Wilson
+    projects: []
+  - companies: []
+    name: Ivan Minutillo
+    projects:
+      - https://github.com/bonfire-networks/bonfire-app
+  - companies: []
+    name: 'Jacob Swanner '
+    projects: []
+  - companies:
+      - electricsql
+    name: James Arthur
+    projects: []
+  - companies: []
+    name: James Harton
+    projects:
+      - https://beambots.dev/
+  - companies: []
+    name: Jamie Wright
+    projects: []
+  - companies: []
+    name: Jason Stiebs
+    projects: []
+  - companies: []
+    name: Jean Klingler
+    projects:
+      - https://github.com/elixir-lang/elixir
+  - companies: []
+    name: Jen Stehlik
+    projects:
+      - https://hex.pm/packages/totally
+      - https://hex.pm/packages/typeid_gleam
+      - https://hex.pm/packages/glemini
+  - companies: []
+    name: Jeremy Gallagher
+    projects: []
+  - companies: []
+    name: Jérôme Desquilbet
+    projects: []
+  - companies:
+      - ratio-pbc
+    name: Jesse Cooke
+    projects: []
+  - companies: []
+    name: Jesse Stimpson
+    projects:
+      - https://hex.pm/packages/erlfdb
+  - companies: []
+    name: João Henrique Ferreira de Freitas
+    projects: []
+  - companies: []
+    name: Joe Martinez
+    projects: []
+  - companies: []
+    name: Joël Koch
+    projects: []
+  - companies: []
+    name: John Downey
+    projects: []
+  - companies: []
+    name: John Kemp
+    projects: []
+  - companies: []
+    name: Jordan Day
+    projects: []
+  - companies:
+      - nervescloud
+    name: Josh Kalderimis
+    projects:
+      - https://github.com/nerves-hub/nerves_hub_web
+  - companies:
+      - alembic
+    name: Josh Price
+    projects:
+      - https://github.com/team-alembic/ash_authentication
+      - https://github.com/team-alembic/ash_authentication_phoenix
+      - https://github.com/team-alembic/clarity
+  - companies: []
+    name: Juan Azambuja
+    projects: []
+  - companies: []
+    name: Juergen Braungardt
+    projects: []
+  - companies: []
+    name: Julian Köpke
+    projects: []
+  - companies: []
+    name: Jung Hoon Lee
+    projects: []
+  - companies:
+      - terrapin-finance
+    name: Juozas Norkus
+    projects: []
+  - companies: []
+    name: Justin Kay
+    projects: []
+  - companies:
+      - tentamen-doo
+    name: Karlo Smid
+    projects: []
+  - companies: []
+    name: Ken Ebling
+    projects: []
+  - companies: []
+    name: Kenji Rikitake
+    projects: []
+  - companies:
+      - addigence
+    name: Kenton Kilmer
+    projects: []
+  - companies:
+      - code-change
+    name: Kero van Gelder
+    projects: []
+  - companies: []
+    name: Kiko Fernandez-Reyes
+    projects: []
+  - companies: []
+    name: Koushik Dasika
+    projects: []
+  - companies:
+      - underjord-ab
+    name: Lars Wikman
+    projects: []
+  - companies: []
+    name: Laszlo Korte
+    projects: []
+  - companies: []
+    name: Lee S. Barney
+    projects: []
+  - companies: []
+    name: Louis Pilfold
+    projects:
+      - https://gleam.run/
+  - companies: []
+    name: Luke Bakken
+    projects:
+      - https://github.com/rabbitmq/rabbitmq-server
+      - https://github.com/Kyorai/cuttlefish
+  - companies: []
+    name: Luke Jernejcic
+    projects: []
+  - companies:
+      - cargosense
+    name: Lynn M Wallenstein
+    projects: []
+  - companies:
+      - software-mansion
+    name: Maciej Rys
+    projects: []
+  - companies: []
+    name: Maggie Tate
+    projects: []
+  - companies: []
+    name: Mark Ericksen
+    projects: []
+  - companies:
+      - lightstack
+    name: Mark Sargent
+    projects: []
+  - companies: []
+    name: Marko Minđek
+    projects: []
+  - companies: []
+    name: Martin Schenck
+    projects: []
+  - companies: []
+    name: Martin Sumner
+    projects:
+      - https://github.com/OpenRiak
+  - companies: []
+    name: Mathias Peter
+    projects: []
+  - companies: []
+    name: 'Matthew '
+    projects: []
+  - companies: []
+    name: Matthew Manley
+    projects: []
+  - companies: []
+    name: Mayel de Borniol
+    projects:
+      - https://bonfirenetworks.org
+      - https://hex.pm/orgs/bonfire
+  - companies: []
+    name: Micah Cooper
+    projects: []
+  - companies: []
+    name: Michał Muskała
+    projects: []
+  - companies: []
+    name: Michael Caterisano
+    projects: []
+  - companies: []
+    name: 'Michael Coles '
+    projects: []
+  - companies:
+      - carver-automation
+    name: Michael Freeman
+    projects:
+      - https://github.com/carverauto/serviceradar
+      - https://code.carverauto.dev/carverauto/serviceradar
+  - companies:
+      - paraxialio
+    name: Michael Lubas
+    projects: []
+  - companies: []
+    name: Michael Shapiro
+    projects: []
+  - companies:
+      - the-state-news
+    name: Mike Joseph
+    projects: []
+  - companies: []
+    name: Mike Schell
+    projects: []
+  - companies: []
+    name: Mironov Artem
+    projects: []
+  - companies: []
+    name: Mohamed Hegazy
+    projects: []
+  - companies: []
+    name: Mylan Connolly
+    projects: []
+  - companies: []
+    name: Nate Shoemaker
+    projects: []
+  - companies: []
+    name: Nathan Hessler
+    projects: []
+  - companies: []
+    name: Nathan Long
+    projects: []
+  - companies: []
+    name: Nelson Jimenez
+    projects: []
+  - companies: []
+    name: Nelson Vides
+    projects: []
+  - companies:
+      - ti-tokyo
+    name: Nicholas Adams
+    projects: []
+  - companies: []
+    name: Nico Hoogervorst
+    projects: []
+  - companies: []
+    name: Nico Piderman
+    projects:
+      - https://hex.pm/packages/finch
+  - companies: []
+    name: Niklas Ögren
+    projects: []
+  - companies: []
+    name: Olivia Streun
+    projects:
+      - https://tangled.org/ollie.earth/eater
+      - https://tangled.org/ollie.earth/fluxer_bot
+      - https://tangled.org/ollie.earth/page
+  - companies: []
+    name: olivier belhomme
+    projects: []
+  - companies: []
+    name: Olivier Boudeville
+    projects: []
+  - companies: []
+    name: Onorio Catenacci
+    projects: []
+  - companies:
+      - oban-pro
+    name: Parker Selbert
+    projects: []
+  - companies: []
+    name: Paulo Valente
+    projects:
+      - https://hex.pm/packages/nx
+      - https://hex.pm/packages/grpc
+  - companies: []
+    name: Paweł Świątkowski
+    projects: []
+  - companies: []
+    name: Pedro Borges
+    projects: []
+  - companies:
+      - ionio-systems
+    name: Per Andersson
+    projects: []
+  - companies:
+      - ti-tokyo
+    name: Peter Clark
+    projects:
+      - https://github.com/OpenRiak
+  - companies:
+      - eyg-labs
+    name: Peter Saxton
+    projects:
+      - https://github.com/CrowdHailer/eyg-lang
+      - https://github.com/crowdhailer/aide
+      - https://github.com/crowdhailer/ace
+  - companies: []
+    name: Petr Chalupa
+    projects: []
+  - companies: []
+    name: Pieter-Jan Vandenbussche
+    projects: []
+  - companies: []
+    name: Piotr Nosek
+    projects: []
+  - companies: []
+    name: Raimo Niskanen
+    projects: []
+  - companies: []
+    name: Raúl R. Pearson
+    projects: []
+  - companies: []
+    name: Rebecca Reusch
+    projects: []
+  - companies: []
+    name: Regan Karlewicz
+    projects: []
+  - companies: []
+    name: Renata
+    projects: []
+  - companies: []
+    name: Richard Ash
+    projects: []
+  - companies:
+      - otolo-networks
+    name: Rick Payne
+    projects: []
+  - companies: []
+    name: Rickard Green
+    projects:
+      - https://github.com/erlang/otp
+  - companies: []
+    name: Robert Carbone
+    projects: []
+  - companies: []
+    name: Robert Fiko
+    projects: []
+  - companies: []
+    name: Robert French
+    projects: []
+  - companies:
+      - mythic-insight
+    name: Robert Prehn
+    projects: []
+  - companies:
+      - express-process-development-llc
+    name: Robert Stewart
+    projects: []
+  - companies:
+      - praia-labs
+    name: Rodolfo Carvalho
+    projects: []
+  - companies:
+      - gassagosso
+    name: Rodrigue VILLETARD
+    projects:
+      - https://photoasso.fr
+  - companies: []
+    name: Roland Rutkowski
+    projects: []
+  - companies: []
+    name: Roland Schätzle
+    projects: []
+  - companies: []
+    name: Russell Matbouli
+    projects: []
+  - companies: []
+    name: Samuel Pordeus
+    projects: []
+  - companies: []
+    name: Samuel Toms
+    projects: []
+  - companies: []
+    name: Saša Jurić
+    projects: []
+  - companies: []
+    name: Savannah Manning
+    projects: []
+  - companies:
+      - data-ductus
+    name: Scott Barvick
+    projects: []
+  - companies: []
+    name: Sean Moriarity
+    projects: []
+  - companies: []
+    name: Seth Falcon
+    projects: []
+  - companies:
+      - luxmi-zb
+    name: Shankar Dhanasekaran
+    projects: []
+  - companies: []
+    name: Simon Thompson
+    projects:
+      - https://epsrc-stardust.github.io
+  - companies:
+      - kaltio-technologies-oy
+    name: Srikanth Kyatham
+    projects: []
+  - companies: []
+    name: Stefan Fochler
+    projects: []
+  - companies: []
+    name: Steffen Deusch
+    projects: []
+  - companies: []
+    name: Steve Grossi
+    projects: []
+  - companies: []
+    name: thanos vassilakis
+    projects:
+      - https://hex.pm/packages/ex_utcp
+  - companies:
+      - logeek-sarl
+    name: Thibaut Barrère
+    projects:
+      - https://github.com/etalab/transport-site
+  - companies: []
+    name: Tobias Pfeiffer
+    projects:
+      - https://github.com/bencheeorg/benchee
+      - https://github.com/PragTob/deep_merge
+      - https://github.com/bencheeorg/statistex
+  - companies: []
+    name: Tomas Metz
+    projects:
+      - https://krabice.jcicr.cz
+  - companies: []
+    name: Torkild Gundersen Kjevik
+    projects: []
+  - companies: []
+    name: Victor Björklund
+    projects: []
+  - companies: []
+    name: Vladislav Shakitskiy
+    projects: []
+  - companies: []
+    name: Wade Mealing
+    projects: []
+  - companies: []
+    name: Will Rogers
+    projects: []
+  - companies: []
+    name: Wojtek Mach
+    projects: []
+  - companies: []
+    name: Zachary Daniel
+    projects:
+      - https://hex.pm/packages/ash
+      - https://hex.pm/packages/usage_rules
+      - https://hex.pm/packages/igniter

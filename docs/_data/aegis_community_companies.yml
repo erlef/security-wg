@@ -1,0 +1,162 @@
+---
+companies:
+  - logo: /assets/aegis/community-supporters/abensoft-ltda.svg
+    name: Abensoft Ltda
+    size: '30'
+    slug: abensoft-ltda
+  - logo: /assets/aegis/community-supporters/addigence.png
+    name: Addigence
+    size: '5'
+    slug: addigence
+  - logo: /assets/aegis/community-supporters/alembic.svg
+    name: Alembic
+    size: '20'
+    slug: alembic
+  - logo:
+    name: Amplified
+    size: '3'
+    slug: amplified
+  - logo: /assets/aegis/community-supporters/binary-noggin.png
+    name: Binary Noggin
+    size: '2'
+    slug: binary-noggin
+  - logo: /assets/aegis/community-supporters/bitcrowd.svg
+    name: bitcrowd
+    size: '25'
+    slug: bitcrowd
+  - logo:
+    name: CargoSense
+    size: '40'
+    slug: cargosense
+  - logo:
+    name: Carver Automation
+    size: '5'
+    slug: carver-automation
+  - logo: /assets/aegis/community-supporters/code-change.svg
+    name: Code Change
+    size: '1'
+    slug: code-change
+  - logo: /assets/aegis/community-supporters/community.svg
+    name: Community
+    size: '100'
+    slug: community
+  - logo: /assets/aegis/community-supporters/data-ductus.png
+    name: Data Ductus
+    size: '300'
+    slug: data-ductus
+  - logo: /assets/aegis/community-supporters/electricsql.png
+    name: ElectricSQL
+    size: '15'
+    slug: electricsql
+  - logo: /assets/aegis/community-supporters/erlang-solutions-ltd.png
+    name: Erlang Solutions Ltd
+    size: '160'
+    slug: erlang-solutions-ltd
+  - logo:
+    name: Express Process Development, LLC
+    size: '1'
+    slug: express-process-development-llc
+  - logo:
+    name: EYG Labs
+    size: '1'
+    slug: eyg-labs
+  - logo: /assets/aegis/community-supporters/gassagosso.webp
+    name: Gassagosso
+    size: '4'
+    slug: gassagosso
+  - logo: /assets/aegis/community-supporters/ionio-systems.png
+    name: Ionio Systems
+    size: '1'
+    slug: ionio-systems
+  - logo: /assets/aegis/community-supporters/kaltio-technologies-oy.webp
+    name: Kaltio Technologies Oy
+    size: '15'
+    slug: kaltio-technologies-oy
+  - logo:
+    name: Leapsight Technologies Limited
+    size: '30'
+    slug: leapsight-technologies-limited
+  - logo: /assets/aegis/community-supporters/lightstack.png
+    name: LightStack
+    size: '2'
+    slug: lightstack
+  - logo:
+    name: LoGeek SARL
+    size: '1'
+    slug: logeek-sarl
+  - logo:
+    name: Luxmi ZB
+    size: '10'
+    slug: luxmi-zb
+  - logo: /assets/aegis/community-supporters/mythic-insight.png
+    name: Mythic Insight
+    size: '2'
+    slug: mythic-insight
+  - logo: /assets/aegis/community-supporters/nervescloud.svg
+    name: NervesCloud
+    size: '2'
+    slug: nervescloud
+  - logo: /assets/aegis/community-supporters/new-generation.svg
+    name: New Generation
+    size: '12'
+    slug: new-generation
+  - logo: /assets/aegis/community-supporters/oban-pro.svg
+    name: Oban Pro
+    size: '2'
+    slug: oban-pro
+  - logo:
+    name: Otolo Networks
+    size: '2'
+    slug: otolo-networks
+  - logo: /assets/aegis/community-supporters/paraxialio.png
+    name: Paraxial.io
+    size: '2'
+    slug: paraxialio
+  - logo: /assets/aegis/community-supporters/praia-labs.svg
+    name: Praia Labs
+    size: '-1'
+    slug: praia-labs
+  - logo:
+    name: Protolux Electronics
+    size: '1'
+    slug: protolux-electronics
+  - logo: /assets/aegis/community-supporters/ratio-pbc.svg
+    name: Ratio PBC
+    size: '6'
+    slug: ratio-pbc
+  - logo: /assets/aegis/community-supporters/script-kitty-foundation.webp
+    name: Script Kitty Foundation
+    size: '1'
+    slug: script-kitty-foundation
+  - logo: /assets/aegis/community-supporters/software-mansion.svg
+    name: Software Mansion
+    size: '400'
+    slug: software-mansion
+  - logo:
+    name: Talim OÜ
+    size: '1'
+    slug: talim-ou
+  - logo: /assets/aegis/community-supporters/tentamen-doo.svg
+    name: Tentamen doo
+    size: '1'
+    slug: tentamen-doo
+  - logo:
+    name: Terrapin Finance
+    size: '20'
+    slug: terrapin-finance
+  - logo: /assets/aegis/community-supporters/the-state-news.svg
+    name: The State News
+    size: '100'
+    slug: the-state-news
+  - logo: /assets/aegis/community-supporters/ti-tokyo.png
+    name: TI Tokyo
+    size: '8'
+    slug: ti-tokyo
+  - logo: /assets/aegis/community-supporters/tv-labs.svg
+    name: TV Labs
+    size: '11'
+    slug: tv-labs
+  - logo: /assets/aegis/community-supporters/underjord-ab.png
+    name: Underjord AB
+    size: '2'
+    slug: underjord-ab

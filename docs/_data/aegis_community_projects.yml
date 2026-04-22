@@ -1,0 +1,176 @@
+---
+projects:
+  - repo: alxndr/plug_prayer_flag
+    type: github
+    url: https://github.com/alxndr/plug_prayer_flag
+  - repo: bartblast/hologram
+    type: github
+    url: https://github.com/bartblast/hologram
+  - repo: bencheeorg/benchee
+    type: github
+    url: https://github.com/bencheeorg/benchee
+  - repo: bencheeorg/statistex
+    type: github
+    url: https://github.com/bencheeorg/statistex
+  - repo: bonfire-networks/bonfire-app
+    type: github
+    url: https://github.com/bonfire-networks/bonfire-app
+  - repo: carverauto/serviceradar
+    type: github
+    url: https://github.com/carverauto/serviceradar
+  - repo: crowdhailer/ace
+    type: github
+    url: https://github.com/crowdhailer/ace
+  - repo: crowdhailer/aide
+    type: github
+    url: https://github.com/crowdhailer/aide
+  - repo: CrowdHailer/eyg-lang
+    type: github
+    url: https://github.com/CrowdHailer/eyg-lang
+  - repo: elixir-dux/dux
+    type: github
+    url: https://github.com/elixir-dux/dux
+  - repo: elixir-ecto/ecto
+    type: github
+    url: https://github.com/elixir-ecto/ecto
+  - repo: elixir-explorer/explorer
+    type: github
+    url: https://github.com/elixir-explorer/explorer
+  - repo: elixir-lang/elixir
+    type: github
+    url: https://github.com/elixir-lang/elixir
+  - repo: erlang/otp
+    type: github
+    url: https://github.com/erlang/otp
+  - repo: etalab/transport-site
+    type: github
+    url: https://github.com/etalab/transport-site
+  - repo: gorenje/erlang-red
+    type: github
+    url: https://github.com/gorenje/erlang-red
+  - repo: HackTuah/HackTui
+    type: github
+    url: https://github.com/HackTuah/HackTui
+  - repo: HackTuah/HackTUI-Hermes-Jido
+    type: github
+    url: https://github.com/HackTuah/HackTUI-Hermes-Jido
+  - repo: jcschuster/SHOT-25
+    type: github
+    url: https://github.com/jcschuster/SHOT-25
+  - repo: Kyorai/cuttlefish
+    type: github
+    url: https://github.com/Kyorai/cuttlefish
+  - repo: nerves-hub/nerves_hub_web
+    type: github
+    url: https://github.com/nerves-hub/nerves_hub_web
+  - repo: PragTob/deep_merge
+    type: github
+    url: https://github.com/PragTob/deep_merge
+  - repo: rabbitmq/rabbitmq-server
+    type: github
+    url: https://github.com/rabbitmq/rabbitmq-server
+  - repo: simdxml/simdxml-elixir
+    type: github
+    url: https://github.com/simdxml/simdxml-elixir
+  - repo: team-alembic/ash_authentication
+    type: github
+    url: https://github.com/team-alembic/ash_authentication
+  - repo: team-alembic/ash_authentication_phoenix
+    type: github
+    url: https://github.com/team-alembic/ash_authentication_phoenix
+  - repo: team-alembic/clarity
+    type: github
+    url: https://github.com/team-alembic/clarity
+  - name: absinthe
+    type: hex
+    url: https://hex.pm/packages/absinthe
+  - name: ash
+    type: hex
+    url: https://hex.pm/packages/ash
+  - name: erlfdb
+    type: hex
+    url: https://hex.pm/packages/erlfdb
+  - name: ex_utcp
+    type: hex
+    url: https://hex.pm/packages/ex_utcp
+  - name: finch
+    type: hex
+    url: https://hex.pm/packages/finch
+  - name: glemini
+    type: hex
+    url: https://hex.pm/packages/glemini
+  - name: glexer
+    type: hex
+    url: https://hex.pm/packages/glexer
+  - name: grom
+    type: hex
+    url: https://hex.pm/packages/grom
+  - name: grpc
+    type: hex
+    url: https://hex.pm/packages/grpc
+  - name: igniter
+    type: hex
+    url: https://hex.pm/packages/igniter
+  - name: isabelle_elixir
+    type: hex
+    url: https://hex.pm/packages/isabelle_elixir
+  - name: nx
+    type: hex
+    url: https://hex.pm/packages/nx
+  - name: operating_system
+    type: hex
+    url: https://hex.pm/packages/operating_system
+  - name: status_code
+    type: hex
+    url: https://hex.pm/packages/status_code
+  - name: totally
+    type: hex
+    url: https://hex.pm/packages/totally
+  - name: typeid_gleam
+    type: hex
+    url: https://hex.pm/packages/typeid_gleam
+  - name: usage_rules
+    type: hex
+    url: https://hex.pm/packages/usage_rules
+  - label: beambots.dev
+    type: other
+    url: https://beambots.dev/
+  - label: bonfirenetworks.org
+    type: other
+    url: https://bonfirenetworks.org
+  - label: code.carverauto.dev/carverauto/serviceradar
+    type: other
+    url: https://code.carverauto.dev/carverauto/serviceradar
+  - label: epsrc-stardust.github.io
+    type: other
+    url: https://epsrc-stardust.github.io
+  - label: github.com/OpenRiak
+    type: other
+    url: https://github.com/OpenRiak
+  - label: gleam.run
+    type: other
+    url: https://gleam.run/
+  - label: hex.pm/orgs/bonfire
+    type: other
+    url: https://hex.pm/orgs/bonfire
+  - label: krabice.jcicr.cz
+    type: other
+    url: https://krabice.jcicr.cz
+  - label: nerves-project.org
+    type: other
+    url: https://nerves-project.org/
+  - label: photoasso.fr
+    type: other
+    url: https://photoasso.fr
+  - label: tangled.org/ollie.earth/eater
+    type: other
+    url: https://tangled.org/ollie.earth/eater
+  - label: tangled.org/ollie.earth/fluxer_bot
+    type: other
+    url: https://tangled.org/ollie.earth/fluxer_bot
+  - label: tangled.org/ollie.earth/page
+    type: other
+    url: https://tangled.org/ollie.earth/page
+  - label: wings3d.com
+    type: other
+    url: https://www.wings3d.com
