@@ -63,6 +63,9 @@ projects:
   - repo: nerves-hub/nerves_hub_web
     type: github
     url: https://github.com/nerves-hub/nerves_hub_web
+  - repo: OpenRiak
+    type: github
+    url: https://github.com/OpenRiak
   - repo: PragTob/deep_merge
     type: github
     url: https://github.com/PragTob/deep_merge
@@ -87,6 +90,9 @@ projects:
   - name: ash
     type: hex
     url: https://hex.pm/packages/ash
+  - name: bonfire
+    type: hex
+    url: https://hex.pm/orgs/bonfire
   - name: erlfdb
     type: hex
     url: https://hex.pm/packages/erlfdb
@@ -144,15 +150,9 @@ projects:
   - label: epsrc-stardust.github.io
     type: other
     url: https://epsrc-stardust.github.io
-  - label: github.com/OpenRiak
-    type: other
-    url: https://github.com/OpenRiak
   - label: gleam.run
     type: other
     url: https://gleam.run/
-  - label: hex.pm/orgs/bonfire
-    type: other
-    url: https://hex.pm/orgs/bonfire
   - label: krabice.jcicr.cz
     type: other
     url: https://krabice.jcicr.cz

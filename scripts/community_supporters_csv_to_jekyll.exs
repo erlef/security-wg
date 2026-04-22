@@ -196,9 +196,17 @@ projects =
         [_, name] = Regex.run(~r|^https?://hex\.pm/packages/([^/]+)/?$|, url)
         %{"url" => url, "type" => "hex", "name" => name}
 
+      String.match?(url, ~r|^https?://hex\.pm/orgs/([^/]+)/?$|) ->
+        [_, org] = Regex.run(~r|^https?://hex\.pm/orgs/([^/]+)/?$|, url)
+        %{"url" => url, "type" => "hex", "name" => org}
+
       String.match?(url, ~r|^https?://github\.com/([^/]+/[^/]+?)(?:\.git)?/?$|) ->
         [_, repo] = Regex.run(~r|^https?://github\.com/([^/]+/[^/]+?)(?:\.git)?/?$|, url)
         %{"url" => url, "type" => "github", "repo" => repo}
+
+      String.match?(url, ~r|^https?://github\.com/([^/]+)/?$|) ->
+        [_, org] = Regex.run(~r|^https?://github\.com/([^/]+)/?$|, url)
+        %{"url" => url, "type" => "github", "repo" => org}
 
       true ->
         label =
