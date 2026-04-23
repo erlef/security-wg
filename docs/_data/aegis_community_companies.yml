@@ -76,6 +76,10 @@ companies:
     name: Gassagosso
     size: '4'
     slug: gassagosso
+  - logo: /assets/aegis/community-supporters/happihacking-ab.png
+    name: HappiHacking AB
+    size: '1'
+    slug: happihacking-ab
   - logo: /assets/aegis/community-supporters/ionio-systems.png
     name: Ionio Systems
     size: '1'

@@ -165,6 +165,10 @@ people:
   - companies: []
     name: Eric J. Christeson
     projects: []
+  - companies:
+      - happihacking-ab
+    name: Erik Stenman
+    projects: []
   - companies: []
     name: 'Étienne Lévesque '
     projects: []
@@ -417,6 +421,9 @@ people:
     name: Martin Sumner
     projects:
       - https://github.com/OpenRiak
+  - companies: []
+    name: Martin Wöginger
+    projects: []
   - companies: []
     name: Mathias Peter
     projects: []

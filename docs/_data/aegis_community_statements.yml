@@ -200,6 +200,18 @@ statements:
     person: Edward Kelly
     projects: []
     text: Secure software supply chain research is vital for our business to be protected from cyber threats, especially in the age of AI
+  - author: Erik Stenman
+    company: happihacking-ab
+    person: Erik Stenman
+    projects: []
+    text: |-
+      Supply-chain security and trusted builds matter because financial systems are not judged only by features or performance; they are judged by whether they can be trusted under scrutiny. In fintech, every dependency, build step, and deployment path becomes part of the compliance surface. A single opaque component or unverifiable artifact can introduce regulatory risk, weaken auditability, and in the worst case compromise customer funds or data. Strengthening supply-chain integrity is therefore a direct way to reduce operational and regulatory exposure.
+
+      My work focuses on building scalable, compliance-ready backend systems in regulated environments. In practice, this means designing systems where every change is traceable, every artifact is reproducible, and every dependency is understood. Trusted builds align closely with this approach. They allow us to move fast without losing control, since we can prove what was built, how it was built, and from which sources. This shifts compliance from a reactive process to a built-in property of the system.
+
+      The Ægis objectives support this direction by promoting verifiable, transparent, and secure software supply chains. These are not abstract ideals; they are necessary conditions for modern fintech systems that operate across jurisdictions, integrate with multiple partners, and handle sensitive financial data at scale. By improving supply-chain security and build integrity, we make it possible to maintain both speed and trust, which is the core tension in fintech today.
+
+      For my projects, this is especially relevant as I work toward creating reusable frameworks and products for high-performance financial systems. Embedding trusted build processes and strong supply-chain guarantees at the foundation ensures that these systems remain robust, auditable, and deployable in real-world regulated environments.
   - author: 'Étienne Lévesque '
     company:
     person: 'Étienne Lévesque '
