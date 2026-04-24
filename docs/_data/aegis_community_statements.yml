@@ -240,6 +240,11 @@ statements:
     person: Frank Kumro
     projects: []
     text: 'supply-chain security issues hurt trust of the ecosystem and adoption. The BEAM would benefit greatly from having one of (if not the) best secured supply-chains available.  '
+  - author: Gabriel Bota
+    company: crafting-software
+    person: Gabriel Bota
+    projects: []
+    text: 'At Crafting Software, we build distributed systems where security and reliability are critical. This makes supply-chain security and trusted builds essential, as risks extend beyond the code we write. '
   - author: Geoffrey Roguelon
     company:
     person: Geoffrey Roguelon

@@ -198,6 +198,10 @@ people:
   - companies: []
     name: Fredrik Teschke
     projects: []
+  - companies:
+      - crafting-software
+    name: Gabriel Bota
+    projects: []
   - companies: []
     name: Geoffrey Roguelon
     projects: []
@@ -312,6 +316,9 @@ people:
     projects: []
   - companies: []
     name: John Kemp
+    projects: []
+  - companies: []
+    name: Jonathan Temple
     projects: []
   - companies: []
     name: Jordan Day
@@ -553,6 +560,10 @@ people:
       - https://github.com/crowdhailer/ace
   - companies: []
     name: Petr Chalupa
+    projects: []
+  - companies:
+      - keila-gmbh
+    name: Philipp Schmieder
     projects: []
   - companies: []
     name: Pieter-Jan Vandenbussche

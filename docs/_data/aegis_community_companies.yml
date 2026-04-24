@@ -48,6 +48,10 @@ companies:
     name: Convivial Tech
     size: '1'
     slug: convivial-tech
+  - logo:
+    name: Crafting Software
+    size: '70'
+    slug: crafting-software
   - logo: /assets/aegis/community-supporters/data-ductus.png
     name: Data Ductus
     size: '300'
