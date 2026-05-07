@@ -5,8 +5,8 @@ status: Planning
 funding_required: true
 index: 10
 previous:
-  url: hex-vulnerability-handling
-  title: Hex Vulnerability Handling
+  url: core-tooling-governance-audit
+  title: Core Tooling Governance Audit
 next:
   url: hex-api-credential-security
   title: Hex API Credential Security

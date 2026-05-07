@@ -6,7 +6,7 @@ funding_required: false
 supporters:
   - Alpha-Omega
 index: 4
-progress: 75
+progress: 90
 previous:
   url: source-sbom
   title: Source SBoM

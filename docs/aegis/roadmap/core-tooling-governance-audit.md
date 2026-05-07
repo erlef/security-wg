@@ -3,13 +3,13 @@ title: Core Tooling Governance Audit
 area: Governance
 status: Planning
 funding_required: false
-index: 8
+index: 9
 previous:
   url: hex-build-provenance
   title: Hex Build Provenance
 next:
-  url: hex-vulnerability-handling
-  title: Hex Vulnerability Handling
+  url: hex-account-security
+  title: Hex Account Security
 ---
 
 ## Goal

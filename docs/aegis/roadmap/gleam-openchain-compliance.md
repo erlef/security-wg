@@ -11,8 +11,8 @@ previous:
   url: supply-chain-security-audit
   title: Supply Chain Security Audit
 next:
-  url: core-tooling-compliance
-  title: Core Tooling Compliance
+  url: hex-vulnerability-handling
+  title: Hex Vulnerability Handling
 ---
 
 ## Goal

@@ -8,10 +8,10 @@ supporters:
   - Ericsson
   - Herrmann Ultraschall
   - Dashbit
-index: 6
+index: 7
 previous:
-  url: gleam-openchain-compliance
-  title: Gleam OpenChain Compliance
+  url: hex-vulnerability-handling
+  title: Hex Vulnerability Handling
 next:
   url: hex-build-provenance
   title: Hex Build Provenance

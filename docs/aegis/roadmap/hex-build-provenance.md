@@ -3,7 +3,7 @@ title: Hex Build Provenance
 area: Supply Chain
 status: Planning
 funding_required: true
-index: 7
+index: 8
 previous:
   url: core-tooling-compliance
   title: Core Tooling Compliance
