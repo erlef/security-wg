@@ -31,8 +31,8 @@ ecosystem.
 
 ## Deliverables
 
-* Implement Trusted Publishing for at least GitHub and GitLab
-* API Tokens are prefixed and the prefix is registered with common secret scanners such as GitHub
+* [ ] Implement Trusted Publishing for at least GitHub and GitLab
+* [X] API Tokens are prefixed and the prefix is registered with common secret scanners such as GitHub
 
 ## Relevant Standards
 

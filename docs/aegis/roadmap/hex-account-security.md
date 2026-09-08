@@ -31,13 +31,13 @@ resilient and secure environment for all Hex.pm users.
 
 ## Deliverables
 
-* Implement WebAuthn Login (additional as 2FA and separate as primary Login)
-* Require 2FA for all package authors (implement conversion period)
-* Require phishing-resistant MFA for package authors
-* Document Account Recovery Policy
-* Notification Email for Account Security Changes
-* Implement Brute Force Prevention
-* Scan Email Addresses for abandoned email domains and lock abandoned accounts
+* [ ] Implement WebAuthn Login (additional as 2FA and separate as primary Login)
+* [X] Require 2FA for all package authors (implement conversion period)
+* [ ] Require phishing-resistant MFA for package authors
+* [ ] Document Account Recovery Policy
+* [X] Notification Email for Account Security Changes
+* [ ] Implement Brute Force Prevention
+* [ ] Scan Email Addresses for abandoned email domains and lock abandoned accounts
 
 ## Relevant Standards
 

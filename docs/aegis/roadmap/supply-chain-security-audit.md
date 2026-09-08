@@ -1,11 +1,11 @@
 ---
 title: Supply Chain Security Audit
 area: Supply Chain
-status: In Progress
+status: Done
 funding_required: false
 supporters:
   - Alpha-Omega
-index: 4
+index: 3
 progress: 90
 previous:
   url: source-sbom

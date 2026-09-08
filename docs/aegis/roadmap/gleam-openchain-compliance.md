@@ -6,7 +6,7 @@ progress: 10
 funding_required: false
 supporters:
   - Herrmann Ultraschall
-index: 5
+index: 6
 previous:
   url: supply-chain-security-audit
   title: Supply Chain Security Audit
